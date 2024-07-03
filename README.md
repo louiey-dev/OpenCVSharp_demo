@@ -25,6 +25,8 @@
 
 ## TODO
 
-- Add additional features
+- Add OpenCV additional features
+- Yolo feature
+- tflite feature
 
 
