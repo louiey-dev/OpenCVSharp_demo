@@ -354,5 +354,18 @@ namespace OpenCVSharp_demo
             Cv.Zoom(path, inout, width, height, border);
 
         }
+
+        private void btnResizeOpenImage_Click(object sender, EventArgs e)
+        {
+            String path = ShowFileOpenDialog(FILE_FILTER_IMAGE);
+
+            int width = Convert.ToInt32(TBGet(tbResizeWidth));
+            int height = Convert.ToInt32(TBGet(tbResizeHeight));
+
+            if(RBGet(rbResizeAbsolute))
+                Cv.ResizeAbsolute(path, width, height);
+            else if(RBGet(rbResizeRelative))
+                Cv.ResizeRelative(path, width, height);
+        }
     }
 }

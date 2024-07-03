@@ -82,28 +82,36 @@
             this.btnOpenImg = new System.Windows.Forms.Button();
             this.btnOpenCamera = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.btnZoomWithOption = new System.Windows.Forms.Button();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tbZoomHeight = new System.Windows.Forms.TextBox();
+            this.tbZoomWidth = new System.Windows.Forms.TextBox();
+            this.rbIsolated = new System.Windows.Forms.RadioButton();
+            this.rbTransparent = new System.Windows.Forms.RadioButton();
+            this.rbReflect101 = new System.Windows.Forms.RadioButton();
+            this.rbWrap = new System.Windows.Forms.RadioButton();
+            this.rbReflect = new System.Windows.Forms.RadioButton();
+            this.rbReplicate = new System.Windows.Forms.RadioButton();
+            this.rbConstant = new System.Windows.Forms.RadioButton();
+            this.btnZoom = new System.Windows.Forms.Button();
+            this.rbZoomOut = new System.Windows.Forms.RadioButton();
+            this.rbZoomIn = new System.Windows.Forms.RadioButton();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.richTextBoxLog = new System.Windows.Forms.RichTextBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.rbZoomIn = new System.Windows.Forms.RadioButton();
-            this.rbZoomOut = new System.Windows.Forms.RadioButton();
-            this.btnZoom = new System.Windows.Forms.Button();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.tbZoomWidth = new System.Windows.Forms.TextBox();
-            this.tbZoomHeight = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.rbConstant = new System.Windows.Forms.RadioButton();
-            this.rbReplicate = new System.Windows.Forms.RadioButton();
-            this.rbReflect = new System.Windows.Forms.RadioButton();
-            this.rbWrap = new System.Windows.Forms.RadioButton();
-            this.rbReflect101 = new System.Windows.Forms.RadioButton();
-            this.rbTransparent = new System.Windows.Forms.RadioButton();
-            this.rbIsolated = new System.Windows.Forms.RadioButton();
-            this.btnZoomWithOption = new System.Windows.Forms.Button();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.btnResizeOpenImage = new System.Windows.Forms.Button();
+            this.tbResizeWidth = new System.Windows.Forms.TextBox();
+            this.tbResizeHeight = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.rbResizeAbsolute = new System.Windows.Forms.RadioButton();
+            this.rbResizeRelative = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -117,13 +125,14 @@
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.groupBox10.SuspendLayout();
+            this.groupBox9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.groupBox8.SuspendLayout();
-            this.groupBox9.SuspendLayout();
-            this.groupBox10.SuspendLayout();
+            this.groupBox11.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -149,8 +158,8 @@
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
@@ -727,6 +736,211 @@
             this.tabPage2.Text = "Feature";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.groupBox11);
+            this.tabPage3.Controls.Add(this.groupBox8);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(858, 397);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Zoom In/Out";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.groupBox10);
+            this.groupBox8.Controls.Add(this.btnZoom);
+            this.groupBox8.Controls.Add(this.rbZoomOut);
+            this.groupBox8.Controls.Add(this.rbZoomIn);
+            this.groupBox8.Location = new System.Drawing.Point(7, 3);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(391, 391);
+            this.groupBox8.TabIndex = 0;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Zoom";
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.btnZoomWithOption);
+            this.groupBox10.Controls.Add(this.groupBox9);
+            this.groupBox10.Controls.Add(this.rbIsolated);
+            this.groupBox10.Controls.Add(this.rbTransparent);
+            this.groupBox10.Controls.Add(this.rbReflect101);
+            this.groupBox10.Controls.Add(this.rbWrap);
+            this.groupBox10.Controls.Add(this.rbReflect);
+            this.groupBox10.Controls.Add(this.rbReplicate);
+            this.groupBox10.Controls.Add(this.rbConstant);
+            this.groupBox10.Location = new System.Drawing.Point(148, 20);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(200, 365);
+            this.groupBox10.TabIndex = 3;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "BorderTypes";
+            // 
+            // btnZoomWithOption
+            // 
+            this.btnZoomWithOption.Location = new System.Drawing.Point(6, 302);
+            this.btnZoomWithOption.Name = "btnZoomWithOption";
+            this.btnZoomWithOption.Size = new System.Drawing.Size(165, 23);
+            this.btnZoomWithOption.TabIndex = 1;
+            this.btnZoomWithOption.Text = "Zoom with option";
+            this.btnZoomWithOption.UseVisualStyleBackColor = true;
+            this.btnZoomWithOption.Click += new System.EventHandler(this.btnZoomWithOption_Click);
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.label2);
+            this.groupBox9.Controls.Add(this.label1);
+            this.groupBox9.Controls.Add(this.tbZoomHeight);
+            this.groupBox9.Controls.Add(this.tbZoomWidth);
+            this.groupBox9.Location = new System.Drawing.Point(6, 186);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(172, 82);
+            this.groupBox9.TabIndex = 2;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Zoom Size";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(11, 48);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(40, 12);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Height";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(11, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 12);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Width";
+            // 
+            // tbZoomHeight
+            // 
+            this.tbZoomHeight.Location = new System.Drawing.Point(65, 45);
+            this.tbZoomHeight.Name = "tbZoomHeight";
+            this.tbZoomHeight.Size = new System.Drawing.Size(100, 21);
+            this.tbZoomHeight.TabIndex = 0;
+            this.tbZoomHeight.Text = "100";
+            this.tbZoomHeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tbZoomWidth
+            // 
+            this.tbZoomWidth.Location = new System.Drawing.Point(65, 18);
+            this.tbZoomWidth.Name = "tbZoomWidth";
+            this.tbZoomWidth.Size = new System.Drawing.Size(100, 21);
+            this.tbZoomWidth.TabIndex = 0;
+            this.tbZoomWidth.Text = "100";
+            this.tbZoomWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // rbIsolated
+            // 
+            this.rbIsolated.AutoSize = true;
+            this.rbIsolated.Location = new System.Drawing.Point(6, 153);
+            this.rbIsolated.Name = "rbIsolated";
+            this.rbIsolated.Size = new System.Drawing.Size(67, 16);
+            this.rbIsolated.TabIndex = 0;
+            this.rbIsolated.Text = "Isolated";
+            this.rbIsolated.UseVisualStyleBackColor = true;
+            // 
+            // rbTransparent
+            // 
+            this.rbTransparent.AutoSize = true;
+            this.rbTransparent.Location = new System.Drawing.Point(6, 131);
+            this.rbTransparent.Name = "rbTransparent";
+            this.rbTransparent.Size = new System.Drawing.Size(91, 16);
+            this.rbTransparent.TabIndex = 0;
+            this.rbTransparent.Text = "Transparent";
+            this.rbTransparent.UseVisualStyleBackColor = true;
+            // 
+            // rbReflect101
+            // 
+            this.rbReflect101.AutoSize = true;
+            this.rbReflect101.Checked = true;
+            this.rbReflect101.Location = new System.Drawing.Point(6, 109);
+            this.rbReflect101.Name = "rbReflect101";
+            this.rbReflect101.Size = new System.Drawing.Size(79, 16);
+            this.rbReflect101.TabIndex = 0;
+            this.rbReflect101.TabStop = true;
+            this.rbReflect101.Text = "Reflect101";
+            this.rbReflect101.UseVisualStyleBackColor = true;
+            // 
+            // rbWrap
+            // 
+            this.rbWrap.AutoSize = true;
+            this.rbWrap.Location = new System.Drawing.Point(6, 87);
+            this.rbWrap.Name = "rbWrap";
+            this.rbWrap.Size = new System.Drawing.Size(51, 16);
+            this.rbWrap.TabIndex = 0;
+            this.rbWrap.Text = "Wrap";
+            this.rbWrap.UseVisualStyleBackColor = true;
+            // 
+            // rbReflect
+            // 
+            this.rbReflect.AutoSize = true;
+            this.rbReflect.Location = new System.Drawing.Point(7, 65);
+            this.rbReflect.Name = "rbReflect";
+            this.rbReflect.Size = new System.Drawing.Size(61, 16);
+            this.rbReflect.TabIndex = 0;
+            this.rbReflect.Text = "Reflect";
+            this.rbReflect.UseVisualStyleBackColor = true;
+            // 
+            // rbReplicate
+            // 
+            this.rbReplicate.AutoSize = true;
+            this.rbReplicate.Location = new System.Drawing.Point(7, 43);
+            this.rbReplicate.Name = "rbReplicate";
+            this.rbReplicate.Size = new System.Drawing.Size(75, 16);
+            this.rbReplicate.TabIndex = 0;
+            this.rbReplicate.Text = "Replicate";
+            this.rbReplicate.UseVisualStyleBackColor = true;
+            // 
+            // rbConstant
+            // 
+            this.rbConstant.AutoSize = true;
+            this.rbConstant.Location = new System.Drawing.Point(7, 21);
+            this.rbConstant.Name = "rbConstant";
+            this.rbConstant.Size = new System.Drawing.Size(73, 16);
+            this.rbConstant.TabIndex = 0;
+            this.rbConstant.Text = "Constant";
+            this.rbConstant.UseVisualStyleBackColor = true;
+            // 
+            // btnZoom
+            // 
+            this.btnZoom.Location = new System.Drawing.Point(7, 66);
+            this.btnZoom.Name = "btnZoom";
+            this.btnZoom.Size = new System.Drawing.Size(75, 23);
+            this.btnZoom.TabIndex = 1;
+            this.btnZoom.Text = "Zoom";
+            this.btnZoom.UseVisualStyleBackColor = true;
+            this.btnZoom.Click += new System.EventHandler(this.btnZoom_Click);
+            // 
+            // rbZoomOut
+            // 
+            this.rbZoomOut.AutoSize = true;
+            this.rbZoomOut.Location = new System.Drawing.Point(7, 43);
+            this.rbZoomOut.Name = "rbZoomOut";
+            this.rbZoomOut.Size = new System.Drawing.Size(79, 16);
+            this.rbZoomOut.TabIndex = 0;
+            this.rbZoomOut.Text = "Zoom Out";
+            this.rbZoomOut.UseVisualStyleBackColor = true;
+            // 
+            // rbZoomIn
+            // 
+            this.rbZoomIn.AutoSize = true;
+            this.rbZoomIn.Checked = true;
+            this.rbZoomIn.Location = new System.Drawing.Point(7, 21);
+            this.rbZoomIn.Name = "rbZoomIn";
+            this.rbZoomIn.Size = new System.Drawing.Size(70, 16);
+            this.rbZoomIn.TabIndex = 0;
+            this.rbZoomIn.TabStop = true;
+            this.rbZoomIn.Text = "Zoom In";
+            this.rbZoomIn.UseVisualStyleBackColor = true;
+            // 
             // splitContainer2
             // 
             this.splitContainer2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -750,209 +964,89 @@
             this.richTextBoxLog.TabIndex = 0;
             this.richTextBoxLog.Text = "";
             // 
-            // tabPage3
+            // groupBox11
             // 
-            this.tabPage3.Controls.Add(this.groupBox8);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(858, 397);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Zoom In/Out";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.groupBox11.Controls.Add(this.rbResizeRelative);
+            this.groupBox11.Controls.Add(this.rbResizeAbsolute);
+            this.groupBox11.Controls.Add(this.label4);
+            this.groupBox11.Controls.Add(this.btnResizeOpenImage);
+            this.groupBox11.Controls.Add(this.label3);
+            this.groupBox11.Controls.Add(this.tbResizeWidth);
+            this.groupBox11.Controls.Add(this.tbResizeHeight);
+            this.groupBox11.Location = new System.Drawing.Point(404, 4);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(451, 390);
+            this.groupBox11.TabIndex = 1;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "Resize";
             // 
-            // groupBox8
+            // btnResizeOpenImage
             // 
-            this.groupBox8.Controls.Add(this.groupBox10);
-            this.groupBox8.Controls.Add(this.btnZoom);
-            this.groupBox8.Controls.Add(this.rbZoomOut);
-            this.groupBox8.Controls.Add(this.rbZoomIn);
-            this.groupBox8.Location = new System.Drawing.Point(7, 3);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(391, 391);
-            this.groupBox8.TabIndex = 0;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Zoom";
+            this.btnResizeOpenImage.Location = new System.Drawing.Point(28, 84);
+            this.btnResizeOpenImage.Name = "btnResizeOpenImage";
+            this.btnResizeOpenImage.Size = new System.Drawing.Size(152, 23);
+            this.btnResizeOpenImage.TabIndex = 0;
+            this.btnResizeOpenImage.Text = "Resize Open Image";
+            this.btnResizeOpenImage.UseVisualStyleBackColor = true;
+            this.btnResizeOpenImage.Click += new System.EventHandler(this.btnResizeOpenImage_Click);
             // 
-            // rbZoomIn
+            // tbResizeWidth
             // 
-            this.rbZoomIn.AutoSize = true;
-            this.rbZoomIn.Checked = true;
-            this.rbZoomIn.Location = new System.Drawing.Point(7, 21);
-            this.rbZoomIn.Name = "rbZoomIn";
-            this.rbZoomIn.Size = new System.Drawing.Size(70, 16);
-            this.rbZoomIn.TabIndex = 0;
-            this.rbZoomIn.TabStop = true;
-            this.rbZoomIn.Text = "Zoom In";
-            this.rbZoomIn.UseVisualStyleBackColor = true;
+            this.tbResizeWidth.Location = new System.Drawing.Point(80, 20);
+            this.tbResizeWidth.Name = "tbResizeWidth";
+            this.tbResizeWidth.Size = new System.Drawing.Size(100, 21);
+            this.tbResizeWidth.TabIndex = 0;
+            this.tbResizeWidth.Text = "100";
+            this.tbResizeWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // rbZoomOut
+            // tbResizeHeight
             // 
-            this.rbZoomOut.AutoSize = true;
-            this.rbZoomOut.Location = new System.Drawing.Point(7, 43);
-            this.rbZoomOut.Name = "rbZoomOut";
-            this.rbZoomOut.Size = new System.Drawing.Size(79, 16);
-            this.rbZoomOut.TabIndex = 0;
-            this.rbZoomOut.Text = "Zoom Out";
-            this.rbZoomOut.UseVisualStyleBackColor = true;
+            this.tbResizeHeight.Location = new System.Drawing.Point(80, 47);
+            this.tbResizeHeight.Name = "tbResizeHeight";
+            this.tbResizeHeight.Size = new System.Drawing.Size(100, 21);
+            this.tbResizeHeight.TabIndex = 0;
+            this.tbResizeHeight.Text = "100";
+            this.tbResizeHeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // btnZoom
+            // label3
             // 
-            this.btnZoom.Location = new System.Drawing.Point(7, 66);
-            this.btnZoom.Name = "btnZoom";
-            this.btnZoom.Size = new System.Drawing.Size(75, 23);
-            this.btnZoom.TabIndex = 1;
-            this.btnZoom.Text = "Zoom";
-            this.btnZoom.UseVisualStyleBackColor = true;
-            this.btnZoom.Click += new System.EventHandler(this.btnZoom_Click);
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(26, 28);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 12);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Width";
             // 
-            // groupBox9
+            // label4
             // 
-            this.groupBox9.Controls.Add(this.label2);
-            this.groupBox9.Controls.Add(this.label1);
-            this.groupBox9.Controls.Add(this.tbZoomHeight);
-            this.groupBox9.Controls.Add(this.tbZoomWidth);
-            this.groupBox9.Location = new System.Drawing.Point(6, 186);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(172, 82);
-            this.groupBox9.TabIndex = 2;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Zoom Size";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(26, 50);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(40, 12);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Height";
             // 
-            // tbZoomWidth
+            // rbResizeAbsolute
             // 
-            this.tbZoomWidth.Location = new System.Drawing.Point(65, 18);
-            this.tbZoomWidth.Name = "tbZoomWidth";
-            this.tbZoomWidth.Size = new System.Drawing.Size(100, 21);
-            this.tbZoomWidth.TabIndex = 0;
-            this.tbZoomWidth.Text = "100";
-            this.tbZoomWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.rbResizeAbsolute.AutoSize = true;
+            this.rbResizeAbsolute.Checked = true;
+            this.rbResizeAbsolute.Location = new System.Drawing.Point(28, 127);
+            this.rbResizeAbsolute.Name = "rbResizeAbsolute";
+            this.rbResizeAbsolute.Size = new System.Drawing.Size(101, 16);
+            this.rbResizeAbsolute.TabIndex = 2;
+            this.rbResizeAbsolute.TabStop = true;
+            this.rbResizeAbsolute.Text = "Absolute Size";
+            this.rbResizeAbsolute.UseVisualStyleBackColor = true;
             // 
-            // tbZoomHeight
+            // rbResizeRelative
             // 
-            this.tbZoomHeight.Location = new System.Drawing.Point(65, 45);
-            this.tbZoomHeight.Name = "tbZoomHeight";
-            this.tbZoomHeight.Size = new System.Drawing.Size(100, 21);
-            this.tbZoomHeight.TabIndex = 0;
-            this.tbZoomHeight.Text = "100";
-            this.tbZoomHeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 12);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Width";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(11, 48);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 12);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Height";
-            // 
-            // groupBox10
-            // 
-            this.groupBox10.Controls.Add(this.btnZoomWithOption);
-            this.groupBox10.Controls.Add(this.groupBox9);
-            this.groupBox10.Controls.Add(this.rbIsolated);
-            this.groupBox10.Controls.Add(this.rbTransparent);
-            this.groupBox10.Controls.Add(this.rbReflect101);
-            this.groupBox10.Controls.Add(this.rbWrap);
-            this.groupBox10.Controls.Add(this.rbReflect);
-            this.groupBox10.Controls.Add(this.rbReplicate);
-            this.groupBox10.Controls.Add(this.rbConstant);
-            this.groupBox10.Location = new System.Drawing.Point(148, 20);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(200, 365);
-            this.groupBox10.TabIndex = 3;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "BorderTypes";
-            // 
-            // rbConstant
-            // 
-            this.rbConstant.AutoSize = true;
-            this.rbConstant.Location = new System.Drawing.Point(7, 21);
-            this.rbConstant.Name = "rbConstant";
-            this.rbConstant.Size = new System.Drawing.Size(73, 16);
-            this.rbConstant.TabIndex = 0;
-            this.rbConstant.Text = "Constant";
-            this.rbConstant.UseVisualStyleBackColor = true;
-            // 
-            // rbReplicate
-            // 
-            this.rbReplicate.AutoSize = true;
-            this.rbReplicate.Location = new System.Drawing.Point(7, 43);
-            this.rbReplicate.Name = "rbReplicate";
-            this.rbReplicate.Size = new System.Drawing.Size(75, 16);
-            this.rbReplicate.TabIndex = 0;
-            this.rbReplicate.Text = "Replicate";
-            this.rbReplicate.UseVisualStyleBackColor = true;
-            // 
-            // rbReflect
-            // 
-            this.rbReflect.AutoSize = true;
-            this.rbReflect.Location = new System.Drawing.Point(7, 65);
-            this.rbReflect.Name = "rbReflect";
-            this.rbReflect.Size = new System.Drawing.Size(61, 16);
-            this.rbReflect.TabIndex = 0;
-            this.rbReflect.Text = "Reflect";
-            this.rbReflect.UseVisualStyleBackColor = true;
-            // 
-            // rbWrap
-            // 
-            this.rbWrap.AutoSize = true;
-            this.rbWrap.Location = new System.Drawing.Point(6, 87);
-            this.rbWrap.Name = "rbWrap";
-            this.rbWrap.Size = new System.Drawing.Size(51, 16);
-            this.rbWrap.TabIndex = 0;
-            this.rbWrap.Text = "Wrap";
-            this.rbWrap.UseVisualStyleBackColor = true;
-            // 
-            // rbReflect101
-            // 
-            this.rbReflect101.AutoSize = true;
-            this.rbReflect101.Checked = true;
-            this.rbReflect101.Location = new System.Drawing.Point(6, 109);
-            this.rbReflect101.Name = "rbReflect101";
-            this.rbReflect101.Size = new System.Drawing.Size(79, 16);
-            this.rbReflect101.TabIndex = 0;
-            this.rbReflect101.TabStop = true;
-            this.rbReflect101.Text = "Reflect101";
-            this.rbReflect101.UseVisualStyleBackColor = true;
-            // 
-            // rbTransparent
-            // 
-            this.rbTransparent.AutoSize = true;
-            this.rbTransparent.Location = new System.Drawing.Point(6, 131);
-            this.rbTransparent.Name = "rbTransparent";
-            this.rbTransparent.Size = new System.Drawing.Size(91, 16);
-            this.rbTransparent.TabIndex = 0;
-            this.rbTransparent.Text = "Transparent";
-            this.rbTransparent.UseVisualStyleBackColor = true;
-            // 
-            // rbIsolated
-            // 
-            this.rbIsolated.AutoSize = true;
-            this.rbIsolated.Location = new System.Drawing.Point(6, 153);
-            this.rbIsolated.Name = "rbIsolated";
-            this.rbIsolated.Size = new System.Drawing.Size(67, 16);
-            this.rbIsolated.TabIndex = 0;
-            this.rbIsolated.Text = "Isolated";
-            this.rbIsolated.UseVisualStyleBackColor = true;
-            // 
-            // btnZoomWithOption
-            // 
-            this.btnZoomWithOption.Location = new System.Drawing.Point(6, 302);
-            this.btnZoomWithOption.Name = "btnZoomWithOption";
-            this.btnZoomWithOption.Size = new System.Drawing.Size(165, 23);
-            this.btnZoomWithOption.TabIndex = 1;
-            this.btnZoomWithOption.Text = "Zoom with option";
-            this.btnZoomWithOption.UseVisualStyleBackColor = true;
-            this.btnZoomWithOption.Click += new System.EventHandler(this.btnZoomWithOption_Click);
+            this.rbResizeRelative.AutoSize = true;
+            this.rbResizeRelative.Location = new System.Drawing.Point(28, 149);
+            this.rbResizeRelative.Name = "rbResizeRelative";
+            this.rbResizeRelative.Size = new System.Drawing.Size(96, 16);
+            this.rbResizeRelative.TabIndex = 2;
+            this.rbResizeRelative.Text = "Relative Size";
+            this.rbResizeRelative.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -982,16 +1076,18 @@
             this.groupBox3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.splitContainer2.Panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
-            this.splitContainer2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
-            this.groupBox9.ResumeLayout(false);
-            this.groupBox9.PerformLayout();
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
+            this.splitContainer2.Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
+            this.splitContainer2.ResumeLayout(false);
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1072,6 +1168,14 @@
         private System.Windows.Forms.RadioButton rbReplicate;
         private System.Windows.Forms.RadioButton rbIsolated;
         private System.Windows.Forms.Button btnZoomWithOption;
+        private System.Windows.Forms.GroupBox groupBox11;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnResizeOpenImage;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox tbResizeWidth;
+        private System.Windows.Forms.TextBox tbResizeHeight;
+        private System.Windows.Forms.RadioButton rbResizeRelative;
+        private System.Windows.Forms.RadioButton rbResizeAbsolute;
     }
 }
 

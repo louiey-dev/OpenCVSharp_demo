@@ -20,7 +20,7 @@
     - Color Space didn't added all
 - Flip mode added
 - Zoom in/out added
-
+- Resize absolute/relative added
 
 ## TODO
 

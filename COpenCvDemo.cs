@@ -14,9 +14,9 @@ namespace OpenCVSharp_demo
         public delegate void Err(String str);
         public delegate void Dbg(String str);
 
-        private Log LOG = null;
-        private Err ERR = null;
-        private Dbg DBG = null;
+        private readonly Log LOG = null;
+        private readonly Err ERR = null;
+        private readonly Dbg DBG = null;
 
         String version;
 
@@ -27,7 +27,7 @@ namespace OpenCVSharp_demo
             DBG = _dbg;
 
             version = Cv2.GetVersionString();
-            LOG("OpenCV version : " + version);
+            LOG("OpenCV version : " + version + "\n");
         }
 
         public void ImgOpen(String path)
@@ -194,6 +194,40 @@ namespace OpenCVSharp_demo
             {
                 ERR(e.ToString());
             }
+        }
+
+        public void ResizeAbsolute(String path, int width, int height)
+        {
+            try
+            {
+                Mat src = new Mat(path);
+                Mat dst = new Mat();
+
+                Cv2.Resize(src, dst, new Size(width, height));
+
+                Cv2.ImShow("src", src);
+                Cv2.ImShow("dst", dst);
+                Cv2.WaitKey(0);
+                Cv2.DestroyAllWindows();
+            }
+            catch(Exception e) { ERR(e.ToString());}
+        }
+
+        public void ResizeRelative(String path, int width, int height)
+        {
+            try
+            {
+                Mat src = new Mat(path);
+                Mat dst = new Mat();
+
+                Cv2.Resize(src, dst, new Size(0, 0), width, height);
+
+                Cv2.ImShow("src", src);
+                Cv2.ImShow("dst", dst);
+                Cv2.WaitKey(0);
+                Cv2.DestroyAllWindows();
+            }
+            catch (Exception e) { ERR(e.ToString()); }
         }
     }
 }
