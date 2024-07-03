@@ -361,11 +361,36 @@ namespace OpenCVSharp_demo
 
             int width = Convert.ToInt32(TBGet(tbResizeWidth));
             int height = Convert.ToInt32(TBGet(tbResizeHeight));
+            InterpolationFlags flag = GetInterpolationFlags();
 
-            if(RBGet(rbResizeAbsolute))
-                Cv.ResizeAbsolute(path, width, height);
+            LOG($"Resize {flag}, {width}, {height}\n");
+
+            if (RBGet(rbResizeAbsolute))
+                Cv.ResizeAbsolute(path, flag, width, height);
             else if(RBGet(rbResizeRelative))
-                Cv.ResizeRelative(path, width, height);
+                Cv.ResizeRelative(path, flag, width, height);
+        }
+
+        public InterpolationFlags GetInterpolationFlags()
+        {
+            try
+            {
+                InterpolationFlags flag = InterpolationFlags.Linear;
+
+                if(RBGet(rbResizeFlagNearest)) flag = InterpolationFlags.Nearest;
+                else if (RBGet(rbResizeFlagLinear)) flag = InterpolationFlags.Linear;
+                else if (RBGet(rbResizeFlagArea)) flag = InterpolationFlags.Area;
+                else if (RBGet(rbResizeFlagCubic)) flag = InterpolationFlags.Cubic;
+                else if (RBGet(rbResizeFlagLanczos4)) flag = InterpolationFlags.Lanczos4;
+                else flag = InterpolationFlags.Linear;
+
+                return flag;
+            }
+            catch (Exception ex)
+            {
+                ERR(ex.ToString());
+                return InterpolationFlags.Linear;
+            }
         }
     }
 }

@@ -112,6 +112,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.rbResizeAbsolute = new System.Windows.Forms.RadioButton();
             this.rbResizeRelative = new System.Windows.Forms.RadioButton();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.rbResizeFlagNearest = new System.Windows.Forms.RadioButton();
+            this.rbResizeFlagLinear = new System.Windows.Forms.RadioButton();
+            this.rbResizeFlagArea = new System.Windows.Forms.RadioButton();
+            this.rbResizeFlagCubic = new System.Windows.Forms.RadioButton();
+            this.rbResizeFlagLanczos4 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -133,6 +140,8 @@
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.SuspendLayout();
             this.groupBox11.SuspendLayout();
+            this.groupBox12.SuspendLayout();
+            this.groupBox13.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -966,8 +975,8 @@
             // 
             // groupBox11
             // 
-            this.groupBox11.Controls.Add(this.rbResizeRelative);
-            this.groupBox11.Controls.Add(this.rbResizeAbsolute);
+            this.groupBox11.Controls.Add(this.groupBox13);
+            this.groupBox11.Controls.Add(this.groupBox12);
             this.groupBox11.Controls.Add(this.label4);
             this.groupBox11.Controls.Add(this.btnResizeOpenImage);
             this.groupBox11.Controls.Add(this.label3);
@@ -1030,7 +1039,7 @@
             // 
             this.rbResizeAbsolute.AutoSize = true;
             this.rbResizeAbsolute.Checked = true;
-            this.rbResizeAbsolute.Location = new System.Drawing.Point(28, 127);
+            this.rbResizeAbsolute.Location = new System.Drawing.Point(6, 22);
             this.rbResizeAbsolute.Name = "rbResizeAbsolute";
             this.rbResizeAbsolute.Size = new System.Drawing.Size(101, 16);
             this.rbResizeAbsolute.TabIndex = 2;
@@ -1041,12 +1050,94 @@
             // rbResizeRelative
             // 
             this.rbResizeRelative.AutoSize = true;
-            this.rbResizeRelative.Location = new System.Drawing.Point(28, 149);
+            this.rbResizeRelative.Location = new System.Drawing.Point(6, 44);
             this.rbResizeRelative.Name = "rbResizeRelative";
             this.rbResizeRelative.Size = new System.Drawing.Size(96, 16);
             this.rbResizeRelative.TabIndex = 2;
             this.rbResizeRelative.Text = "Relative Size";
             this.rbResizeRelative.UseVisualStyleBackColor = true;
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.rbResizeAbsolute);
+            this.groupBox12.Controls.Add(this.rbResizeRelative);
+            this.groupBox12.Location = new System.Drawing.Point(28, 128);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(120, 72);
+            this.groupBox12.TabIndex = 3;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "Size Mode";
+            // 
+            // groupBox13
+            // 
+            this.groupBox13.Controls.Add(this.rbResizeFlagLanczos4);
+            this.groupBox13.Controls.Add(this.rbResizeFlagCubic);
+            this.groupBox13.Controls.Add(this.rbResizeFlagArea);
+            this.groupBox13.Controls.Add(this.rbResizeFlagLinear);
+            this.groupBox13.Controls.Add(this.rbResizeFlagNearest);
+            this.groupBox13.Location = new System.Drawing.Point(221, 20);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(200, 146);
+            this.groupBox13.TabIndex = 4;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "InterpolationFlags";
+            // 
+            // rbResizeFlagNearest
+            // 
+            this.rbResizeFlagNearest.AutoSize = true;
+            this.rbResizeFlagNearest.Location = new System.Drawing.Point(7, 22);
+            this.rbResizeFlagNearest.Name = "rbResizeFlagNearest";
+            this.rbResizeFlagNearest.Size = new System.Drawing.Size(67, 16);
+            this.rbResizeFlagNearest.TabIndex = 0;
+            this.rbResizeFlagNearest.Text = "Nearest";
+            this.toolTip1.SetToolTip(this.rbResizeFlagNearest, "가장 가까운 이웃 보간법");
+            this.rbResizeFlagNearest.UseVisualStyleBackColor = true;
+            // 
+            // rbResizeFlagLinear
+            // 
+            this.rbResizeFlagLinear.AutoSize = true;
+            this.rbResizeFlagLinear.Checked = true;
+            this.rbResizeFlagLinear.Location = new System.Drawing.Point(7, 42);
+            this.rbResizeFlagLinear.Name = "rbResizeFlagLinear";
+            this.rbResizeFlagLinear.Size = new System.Drawing.Size(58, 16);
+            this.rbResizeFlagLinear.TabIndex = 0;
+            this.rbResizeFlagLinear.TabStop = true;
+            this.rbResizeFlagLinear.Text = "Linear";
+            this.toolTip1.SetToolTip(this.rbResizeFlagLinear, "쌍 선형 보간법");
+            this.rbResizeFlagLinear.UseVisualStyleBackColor = true;
+            // 
+            // rbResizeFlagArea
+            // 
+            this.rbResizeFlagArea.AutoSize = true;
+            this.rbResizeFlagArea.Location = new System.Drawing.Point(6, 64);
+            this.rbResizeFlagArea.Name = "rbResizeFlagArea";
+            this.rbResizeFlagArea.Size = new System.Drawing.Size(49, 16);
+            this.rbResizeFlagArea.TabIndex = 0;
+            this.rbResizeFlagArea.Text = "Area";
+            this.toolTip1.SetToolTip(this.rbResizeFlagArea, "영역 보간법");
+            this.rbResizeFlagArea.UseVisualStyleBackColor = true;
+            // 
+            // rbResizeFlagCubic
+            // 
+            this.rbResizeFlagCubic.AutoSize = true;
+            this.rbResizeFlagCubic.Location = new System.Drawing.Point(6, 86);
+            this.rbResizeFlagCubic.Name = "rbResizeFlagCubic";
+            this.rbResizeFlagCubic.Size = new System.Drawing.Size(56, 16);
+            this.rbResizeFlagCubic.TabIndex = 0;
+            this.rbResizeFlagCubic.Text = "Cubic";
+            this.toolTip1.SetToolTip(this.rbResizeFlagCubic, "4×4 바이 큐빅 보간법");
+            this.rbResizeFlagCubic.UseVisualStyleBackColor = true;
+            // 
+            // rbResizeFlagLanczos4
+            // 
+            this.rbResizeFlagLanczos4.AutoSize = true;
+            this.rbResizeFlagLanczos4.Location = new System.Drawing.Point(7, 108);
+            this.rbResizeFlagLanczos4.Name = "rbResizeFlagLanczos4";
+            this.rbResizeFlagLanczos4.Size = new System.Drawing.Size(78, 16);
+            this.rbResizeFlagLanczos4.TabIndex = 0;
+            this.rbResizeFlagLanczos4.Text = "Lanczos4";
+            this.toolTip1.SetToolTip(this.rbResizeFlagLanczos4, "8×8 란초스 보간법");
+            this.rbResizeFlagLanczos4.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -1088,6 +1179,10 @@
             this.splitContainer2.ResumeLayout(false);
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox12.PerformLayout();
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox13.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1176,6 +1271,13 @@
         private System.Windows.Forms.TextBox tbResizeHeight;
         private System.Windows.Forms.RadioButton rbResizeRelative;
         private System.Windows.Forms.RadioButton rbResizeAbsolute;
+        private System.Windows.Forms.GroupBox groupBox12;
+        private System.Windows.Forms.GroupBox groupBox13;
+        private System.Windows.Forms.RadioButton rbResizeFlagLanczos4;
+        private System.Windows.Forms.RadioButton rbResizeFlagCubic;
+        private System.Windows.Forms.RadioButton rbResizeFlagArea;
+        private System.Windows.Forms.RadioButton rbResizeFlagLinear;
+        private System.Windows.Forms.RadioButton rbResizeFlagNearest;
     }
 }
 

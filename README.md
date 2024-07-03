@@ -21,6 +21,7 @@
 - Flip mode added
 - Zoom in/out added
 - Resize absolute/relative added
+    - InterpolationFlags option added
 
 ## TODO
 

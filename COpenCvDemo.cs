@@ -196,14 +196,14 @@ namespace OpenCVSharp_demo
             }
         }
 
-        public void ResizeAbsolute(String path, int width, int height)
+        public void ResizeAbsolute(String path, InterpolationFlags flag, int width, int height)
         {
             try
             {
                 Mat src = new Mat(path);
                 Mat dst = new Mat();
 
-                Cv2.Resize(src, dst, new Size(width, height));
+                Cv2.Resize(src, dst, new Size(width, height), 0, 0, flag);
 
                 Cv2.ImShow("src", src);
                 Cv2.ImShow("dst", dst);
@@ -213,14 +213,14 @@ namespace OpenCVSharp_demo
             catch(Exception e) { ERR(e.ToString());}
         }
 
-        public void ResizeRelative(String path, int width, int height)
+        public void ResizeRelative(String path, InterpolationFlags flag, int width, int height)
         {
             try
             {
                 Mat src = new Mat(path);
                 Mat dst = new Mat();
 
-                Cv2.Resize(src, dst, new Size(0, 0), width, height);
+                Cv2.Resize(src, dst, new Size(0, 0), width, height, flag);
 
                 Cv2.ImShow("src", src);
                 Cv2.ImShow("dst", dst);
