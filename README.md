@@ -22,6 +22,10 @@
 - Zoom in/out added
 - Resize absolute/relative added
     - InterpolationFlags option added
+- Subtract added with rectangle param
+- Binarization added
+- Image Math, add/sub/mul/div/max/min/abs/abs diff
+- Image bitwise, and/or/xor/not/compare added
 
 ## TODO
 

@@ -259,7 +259,7 @@ namespace OpenCVSharp_demo
                 String path = ShowFileOpenDialog(FILE_FILTER_IMAGE);
 
                 FlipMode mode = GetFlipMode();
-                Cv.FlipMode(path, MatType.CV_8UC3, mode);
+                Cv.FlipImgMode(path, MatType.CV_8UC3, mode);
             }
             catch(Exception ex) {  ERR(ex.ToString()); }
         }
@@ -391,6 +391,144 @@ namespace OpenCVSharp_demo
                 ERR(ex.ToString());
                 return InterpolationFlags.Linear;
             }
+        }
+
+        private void btnSubtractOpen_Click(object sender, EventArgs e)
+        {
+            String path = ShowFileOpenDialog(FILE_FILTER_IMAGE);
+
+            int x = Convert.ToInt32(TBGet(tbSubtractX));
+            int y = Convert.ToInt32(TBGet(tbSubtractY));
+            int w = Convert.ToInt32(TBGet(tbSubtractWidth));
+            int h = Convert.ToInt32(TBGet(tbSubtractHeight));
+
+            LOG($"Subtract : x {x}, y {y}, w {w}, h {h}\n");
+
+            Cv.Subtract(path, x, y, w, h);
+        }
+
+        private void btnBinOpen_Click(object sender, EventArgs e)
+        {
+            String path = ShowFileOpenDialog(FILE_FILTER_IMAGE);
+
+            double threshold = Convert.ToDouble(TBGet(tbBinThreshold));
+            double max = Convert.ToDouble(TBGet(tbBinMaxValue));
+            ThresholdTypes thresholdTypes = GetThresholdTypes();
+
+            LOG($"Binarization : threshold {threshold}, max value {max}\n");
+
+            Cv.Binarization(path, threshold, max, thresholdTypes);
+        }
+
+        public ThresholdTypes GetThresholdTypes()
+        {
+            try
+            {
+                ThresholdTypes th = ThresholdTypes.Binary;
+
+                if(RBGet(rbBinTypeBinary))
+                    th = ThresholdTypes.Binary;
+                else if(RBGet(rbBinTypeBinaryInv))
+                    th = ThresholdTypes.BinaryInv;
+                else if (RBGet(rbBinTypeTrunc))
+                    th = ThresholdTypes.Trunc;
+                else if (RBGet(rbBinTypeTozero))
+                    th = ThresholdTypes.Tozero;
+                else if (RBGet(rbBinTypeTozeroInv))
+                    th = ThresholdTypes.TozeroInv;
+                else if (RBGet(rbBinTypeMask))
+                    th = ThresholdTypes.Mask;
+                else if (RBGet(rbBinTypeOtsu))
+                    th = ThresholdTypes.Otsu;
+                else if (RBGet(rbBinTypeTriangle))
+                    th = ThresholdTypes.Triangle;
+
+                return th;
+            }
+            catch (Exception ex)
+            {
+                ERR(ex.ToString());
+                return ThresholdTypes.Binary;
+            }
+        }
+
+        private void btnAddImgOpen_Click(object sender, EventArgs e)
+        {
+            String path = ShowFileOpenDialog(FILE_FILTER_IMAGE);
+
+            Cv.AddImage(path);
+        }
+
+        private void btnSubImgOpen_Click(object sender, EventArgs e)
+        {
+            String path = ShowFileOpenDialog(FILE_FILTER_IMAGE);
+            Cv.SubtractImage(path);
+        }
+
+        private void btnMulImgOpen_Click(object sender, EventArgs e)
+        {
+            String path = ShowFileOpenDialog(FILE_FILTER_IMAGE);
+            Cv.MultiplyImage(path);
+        }
+
+        private void btnDivImgOpen_Click(object sender, EventArgs e)
+        {
+            String path = ShowFileOpenDialog(FILE_FILTER_IMAGE);
+            Cv.DivideImage(path);
+        }
+
+        private void btnMaxImgOpen_Click(object sender, EventArgs e)
+        {
+            String path = ShowFileOpenDialog(FILE_FILTER_IMAGE);
+            Cv.MaxImage(path);
+        }
+
+        private void btnMinImgOpen_Click(object sender, EventArgs e)
+        {
+            String path = ShowFileOpenDialog(FILE_FILTER_IMAGE);
+            Cv.MinImage(path);
+        }
+
+        private void btnAbsImgOpen_Click(object sender, EventArgs e)
+        {
+            String path = ShowFileOpenDialog(FILE_FILTER_IMAGE);
+            Cv.AbsImage(path);
+        }
+
+        private void btnAbsDiffImgOpen_Click(object sender, EventArgs e)
+        {
+            String path = ShowFileOpenDialog(FILE_FILTER_IMAGE);
+            Cv.AbsDiffImage(path);
+        }
+
+        private void btnAndImgOpen_Click(object sender, EventArgs e)
+        {
+            String path = ShowFileOpenDialog(FILE_FILTER_IMAGE);
+            Cv.AndImage(path);
+        }
+
+        private void btnOrImgOpen_Click(object sender, EventArgs e)
+        {
+            String path = ShowFileOpenDialog(FILE_FILTER_IMAGE);
+            Cv.OrImage(path);
+        }
+
+        private void btnXorImgOpen_Click(object sender, EventArgs e)
+        {
+            String path = ShowFileOpenDialog(FILE_FILTER_IMAGE);
+            Cv.XorImage(path);
+        }
+
+        private void btnNotImgOpen_Click(object sender, EventArgs e)
+        {
+            String path = ShowFileOpenDialog(FILE_FILTER_IMAGE);
+            Cv.NotImage(path);
+        }
+
+        private void btnCompareImgOpen_Click(object sender, EventArgs e)
+        {
+            String path = ShowFileOpenDialog(FILE_FILTER_IMAGE);
+            Cv.CompareImage(path);
         }
     }
 }

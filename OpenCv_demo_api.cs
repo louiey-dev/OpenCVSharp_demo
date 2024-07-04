@@ -57,7 +57,7 @@ namespace OpenCVSharp_demo
             }
         }
 
-        const String FILE_FILTER_IMAGE = "그림 파일 (*.jpg, *.gif, *.bmp, *.png, *.svd) | *.jpg; *.gif; *.bmp; *.png; *.svd; | 모든 파일 (*.*) | *.*";
+        const String FILE_FILTER_IMAGE = "그림 파일 (*.jpg, *.gif, *.bmp, *.png, *.svd, *.webp) | *.jpg; *.gif; *.bmp; *.png; *.svd; *.webp; | 모든 파일 (*.*) | *.*";
         const String FILE_FILTER_VIDEO = "비디오 파일 (*.mp4, *.avi, *.mpeg) | *.mp4; *.avi; *.mpeg; | 모든 파일 (*.*) | *.*";
 
         public String ShowFileOpenDialog(String fileFilter)

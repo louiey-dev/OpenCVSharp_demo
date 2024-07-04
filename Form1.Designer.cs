@@ -81,8 +81,32 @@
             this.rbUnchanged = new System.Windows.Forms.RadioButton();
             this.btnOpenImg = new System.Windows.Forms.Button();
             this.btnOpenCamera = new System.Windows.Forms.Button();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.btnSubtractOpen = new System.Windows.Forms.Button();
+            this.tbSubtractHeight = new System.Windows.Forms.TextBox();
+            this.tbSubtractWidth = new System.Windows.Forms.TextBox();
+            this.tbSubtractY = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.tbSubtractX = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.rbResizeFlagLanczos4 = new System.Windows.Forms.RadioButton();
+            this.rbResizeFlagCubic = new System.Windows.Forms.RadioButton();
+            this.rbResizeFlagArea = new System.Windows.Forms.RadioButton();
+            this.rbResizeFlagLinear = new System.Windows.Forms.RadioButton();
+            this.rbResizeFlagNearest = new System.Windows.Forms.RadioButton();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.rbResizeAbsolute = new System.Windows.Forms.RadioButton();
+            this.rbResizeRelative = new System.Windows.Forms.RadioButton();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnResizeOpenImage = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tbResizeWidth = new System.Windows.Forms.TextBox();
+            this.tbResizeHeight = new System.Windows.Forms.TextBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.btnZoomWithOption = new System.Windows.Forms.Button();
@@ -101,24 +125,41 @@
             this.btnZoom = new System.Windows.Forms.Button();
             this.rbZoomOut = new System.Windows.Forms.RadioButton();
             this.rbZoomIn = new System.Windows.Forms.RadioButton();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.btnBinOpen = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.tbBinMaxValue = new System.Windows.Forms.TextBox();
+            this.tbBinThreshold = new System.Windows.Forms.TextBox();
+            this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.rbBinTypeTriangle = new System.Windows.Forms.RadioButton();
+            this.rbBinTypeOtsu = new System.Windows.Forms.RadioButton();
+            this.rbBinTypeMask = new System.Windows.Forms.RadioButton();
+            this.rbBinTypeTrunc = new System.Windows.Forms.RadioButton();
+            this.rbBinTypeTozeroInv = new System.Windows.Forms.RadioButton();
+            this.rbBinTypeBinaryInv = new System.Windows.Forms.RadioButton();
+            this.rbBinTypeTozero = new System.Windows.Forms.RadioButton();
+            this.rbBinTypeBinary = new System.Windows.Forms.RadioButton();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.richTextBoxLog = new System.Windows.Forms.RichTextBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.btnResizeOpenImage = new System.Windows.Forms.Button();
-            this.tbResizeWidth = new System.Windows.Forms.TextBox();
-            this.tbResizeHeight = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.rbResizeAbsolute = new System.Windows.Forms.RadioButton();
-            this.rbResizeRelative = new System.Windows.Forms.RadioButton();
-            this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.rbResizeFlagNearest = new System.Windows.Forms.RadioButton();
-            this.rbResizeFlagLinear = new System.Windows.Forms.RadioButton();
-            this.rbResizeFlagArea = new System.Windows.Forms.RadioButton();
-            this.rbResizeFlagCubic = new System.Windows.Forms.RadioButton();
-            this.rbResizeFlagLanczos4 = new System.Windows.Forms.RadioButton();
+            this.groupBox17 = new System.Windows.Forms.GroupBox();
+            this.btnAddImgOpen = new System.Windows.Forms.Button();
+            this.btnSubImgOpen = new System.Windows.Forms.Button();
+            this.btnMulImgOpen = new System.Windows.Forms.Button();
+            this.btnDivImgOpen = new System.Windows.Forms.Button();
+            this.btnMaxImgOpen = new System.Windows.Forms.Button();
+            this.btnMinImgOpen = new System.Windows.Forms.Button();
+            this.btnAbsImgOpen = new System.Windows.Forms.Button();
+            this.btnAbsDiffImgOpen = new System.Windows.Forms.Button();
+            this.btnAndImgOpen = new System.Windows.Forms.Button();
+            this.btnOrImgOpen = new System.Windows.Forms.Button();
+            this.btnXorImgOpen = new System.Windows.Forms.Button();
+            this.btnNotImgOpen = new System.Windows.Forms.Button();
+            this.btnCompareImgOpen = new System.Windows.Forms.Button();
+            this.groupBox18 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -133,15 +174,20 @@
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.groupBox14.SuspendLayout();
+            this.groupBox11.SuspendLayout();
+            this.groupBox13.SuspendLayout();
+            this.groupBox12.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.groupBox9.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            this.groupBox15.SuspendLayout();
+            this.groupBox16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.SuspendLayout();
-            this.groupBox11.SuspendLayout();
-            this.groupBox12.SuspendLayout();
-            this.groupBox13.SuspendLayout();
+            this.groupBox17.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -168,6 +214,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
@@ -735,18 +782,9 @@
             this.btnOpenCamera.UseVisualStyleBackColor = true;
             this.btnOpenCamera.Click += new System.EventHandler(this.btnOpenCamera_Click);
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(858, 397);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Feature";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.groupBox14);
             this.tabPage3.Controls.Add(this.groupBox11);
             this.tabPage3.Controls.Add(this.groupBox8);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
@@ -755,6 +793,272 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Zoom In/Out";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // groupBox14
+            // 
+            this.groupBox14.Controls.Add(this.btnSubtractOpen);
+            this.groupBox14.Controls.Add(this.tbSubtractHeight);
+            this.groupBox14.Controls.Add(this.tbSubtractWidth);
+            this.groupBox14.Controls.Add(this.tbSubtractY);
+            this.groupBox14.Controls.Add(this.label8);
+            this.groupBox14.Controls.Add(this.tbSubtractX);
+            this.groupBox14.Controls.Add(this.label7);
+            this.groupBox14.Controls.Add(this.label6);
+            this.groupBox14.Controls.Add(this.label5);
+            this.groupBox14.Location = new System.Drawing.Point(404, 207);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Size = new System.Drawing.Size(451, 187);
+            this.groupBox14.TabIndex = 2;
+            this.groupBox14.TabStop = false;
+            this.groupBox14.Text = "Subtract";
+            // 
+            // btnSubtractOpen
+            // 
+            this.btnSubtractOpen.Location = new System.Drawing.Point(80, 144);
+            this.btnSubtractOpen.Name = "btnSubtractOpen";
+            this.btnSubtractOpen.Size = new System.Drawing.Size(142, 23);
+            this.btnSubtractOpen.TabIndex = 2;
+            this.btnSubtractOpen.Text = "Subtract Open Image";
+            this.btnSubtractOpen.UseVisualStyleBackColor = true;
+            this.btnSubtractOpen.Click += new System.EventHandler(this.btnSubtractOpen_Click);
+            // 
+            // tbSubtractHeight
+            // 
+            this.tbSubtractHeight.Location = new System.Drawing.Point(80, 108);
+            this.tbSubtractHeight.Name = "tbSubtractHeight";
+            this.tbSubtractHeight.Size = new System.Drawing.Size(100, 21);
+            this.tbSubtractHeight.TabIndex = 0;
+            this.tbSubtractHeight.Text = "500";
+            this.tbSubtractHeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tbSubtractWidth
+            // 
+            this.tbSubtractWidth.Location = new System.Drawing.Point(80, 81);
+            this.tbSubtractWidth.Name = "tbSubtractWidth";
+            this.tbSubtractWidth.Size = new System.Drawing.Size(100, 21);
+            this.tbSubtractWidth.TabIndex = 0;
+            this.tbSubtractWidth.Text = "300";
+            this.tbSubtractWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tbSubtractY
+            // 
+            this.tbSubtractY.Location = new System.Drawing.Point(80, 53);
+            this.tbSubtractY.Name = "tbSubtractY";
+            this.tbSubtractY.Size = new System.Drawing.Size(100, 21);
+            this.tbSubtractY.TabIndex = 0;
+            this.tbSubtractY.Text = "500";
+            this.tbSubtractY.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(26, 113);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(40, 12);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Height";
+            // 
+            // tbSubtractX
+            // 
+            this.tbSubtractX.Location = new System.Drawing.Point(80, 26);
+            this.tbSubtractX.Name = "tbSubtractX";
+            this.tbSubtractX.Size = new System.Drawing.Size(100, 21);
+            this.tbSubtractX.TabIndex = 0;
+            this.tbSubtractX.Text = "300";
+            this.tbSubtractX.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(26, 87);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(35, 12);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "Width";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(26, 58);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(13, 12);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Y";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(26, 32);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(13, 12);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "X";
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Controls.Add(this.groupBox13);
+            this.groupBox11.Controls.Add(this.groupBox12);
+            this.groupBox11.Controls.Add(this.label4);
+            this.groupBox11.Controls.Add(this.btnResizeOpenImage);
+            this.groupBox11.Controls.Add(this.label3);
+            this.groupBox11.Controls.Add(this.tbResizeWidth);
+            this.groupBox11.Controls.Add(this.tbResizeHeight);
+            this.groupBox11.Location = new System.Drawing.Point(404, 4);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(451, 197);
+            this.groupBox11.TabIndex = 1;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "Resize";
+            // 
+            // groupBox13
+            // 
+            this.groupBox13.Controls.Add(this.rbResizeFlagLanczos4);
+            this.groupBox13.Controls.Add(this.rbResizeFlagCubic);
+            this.groupBox13.Controls.Add(this.rbResizeFlagArea);
+            this.groupBox13.Controls.Add(this.rbResizeFlagLinear);
+            this.groupBox13.Controls.Add(this.rbResizeFlagNearest);
+            this.groupBox13.Location = new System.Drawing.Point(221, 20);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(200, 132);
+            this.groupBox13.TabIndex = 4;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "InterpolationFlags";
+            // 
+            // rbResizeFlagLanczos4
+            // 
+            this.rbResizeFlagLanczos4.AutoSize = true;
+            this.rbResizeFlagLanczos4.Location = new System.Drawing.Point(7, 108);
+            this.rbResizeFlagLanczos4.Name = "rbResizeFlagLanczos4";
+            this.rbResizeFlagLanczos4.Size = new System.Drawing.Size(78, 16);
+            this.rbResizeFlagLanczos4.TabIndex = 0;
+            this.rbResizeFlagLanczos4.Text = "Lanczos4";
+            this.toolTip1.SetToolTip(this.rbResizeFlagLanczos4, "8×8 란초스 보간법");
+            this.rbResizeFlagLanczos4.UseVisualStyleBackColor = true;
+            // 
+            // rbResizeFlagCubic
+            // 
+            this.rbResizeFlagCubic.AutoSize = true;
+            this.rbResizeFlagCubic.Location = new System.Drawing.Point(6, 86);
+            this.rbResizeFlagCubic.Name = "rbResizeFlagCubic";
+            this.rbResizeFlagCubic.Size = new System.Drawing.Size(56, 16);
+            this.rbResizeFlagCubic.TabIndex = 0;
+            this.rbResizeFlagCubic.Text = "Cubic";
+            this.toolTip1.SetToolTip(this.rbResizeFlagCubic, "4×4 바이 큐빅 보간법");
+            this.rbResizeFlagCubic.UseVisualStyleBackColor = true;
+            // 
+            // rbResizeFlagArea
+            // 
+            this.rbResizeFlagArea.AutoSize = true;
+            this.rbResizeFlagArea.Location = new System.Drawing.Point(6, 64);
+            this.rbResizeFlagArea.Name = "rbResizeFlagArea";
+            this.rbResizeFlagArea.Size = new System.Drawing.Size(49, 16);
+            this.rbResizeFlagArea.TabIndex = 0;
+            this.rbResizeFlagArea.Text = "Area";
+            this.toolTip1.SetToolTip(this.rbResizeFlagArea, "영역 보간법");
+            this.rbResizeFlagArea.UseVisualStyleBackColor = true;
+            // 
+            // rbResizeFlagLinear
+            // 
+            this.rbResizeFlagLinear.AutoSize = true;
+            this.rbResizeFlagLinear.Checked = true;
+            this.rbResizeFlagLinear.Location = new System.Drawing.Point(7, 42);
+            this.rbResizeFlagLinear.Name = "rbResizeFlagLinear";
+            this.rbResizeFlagLinear.Size = new System.Drawing.Size(58, 16);
+            this.rbResizeFlagLinear.TabIndex = 0;
+            this.rbResizeFlagLinear.TabStop = true;
+            this.rbResizeFlagLinear.Text = "Linear";
+            this.toolTip1.SetToolTip(this.rbResizeFlagLinear, "쌍 선형 보간법");
+            this.rbResizeFlagLinear.UseVisualStyleBackColor = true;
+            // 
+            // rbResizeFlagNearest
+            // 
+            this.rbResizeFlagNearest.AutoSize = true;
+            this.rbResizeFlagNearest.Location = new System.Drawing.Point(7, 22);
+            this.rbResizeFlagNearest.Name = "rbResizeFlagNearest";
+            this.rbResizeFlagNearest.Size = new System.Drawing.Size(67, 16);
+            this.rbResizeFlagNearest.TabIndex = 0;
+            this.rbResizeFlagNearest.Text = "Nearest";
+            this.toolTip1.SetToolTip(this.rbResizeFlagNearest, "가장 가까운 이웃 보간법");
+            this.rbResizeFlagNearest.UseVisualStyleBackColor = true;
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.rbResizeAbsolute);
+            this.groupBox12.Controls.Add(this.rbResizeRelative);
+            this.groupBox12.Location = new System.Drawing.Point(28, 116);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(120, 72);
+            this.groupBox12.TabIndex = 3;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "Size Mode";
+            // 
+            // rbResizeAbsolute
+            // 
+            this.rbResizeAbsolute.AutoSize = true;
+            this.rbResizeAbsolute.Checked = true;
+            this.rbResizeAbsolute.Location = new System.Drawing.Point(6, 22);
+            this.rbResizeAbsolute.Name = "rbResizeAbsolute";
+            this.rbResizeAbsolute.Size = new System.Drawing.Size(101, 16);
+            this.rbResizeAbsolute.TabIndex = 2;
+            this.rbResizeAbsolute.TabStop = true;
+            this.rbResizeAbsolute.Text = "Absolute Size";
+            this.rbResizeAbsolute.UseVisualStyleBackColor = true;
+            // 
+            // rbResizeRelative
+            // 
+            this.rbResizeRelative.AutoSize = true;
+            this.rbResizeRelative.Location = new System.Drawing.Point(6, 44);
+            this.rbResizeRelative.Name = "rbResizeRelative";
+            this.rbResizeRelative.Size = new System.Drawing.Size(96, 16);
+            this.rbResizeRelative.TabIndex = 2;
+            this.rbResizeRelative.Text = "Relative Size";
+            this.rbResizeRelative.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(26, 50);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(40, 12);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Height";
+            // 
+            // btnResizeOpenImage
+            // 
+            this.btnResizeOpenImage.Location = new System.Drawing.Point(28, 84);
+            this.btnResizeOpenImage.Name = "btnResizeOpenImage";
+            this.btnResizeOpenImage.Size = new System.Drawing.Size(152, 23);
+            this.btnResizeOpenImage.TabIndex = 0;
+            this.btnResizeOpenImage.Text = "Resize Open Image";
+            this.btnResizeOpenImage.UseVisualStyleBackColor = true;
+            this.btnResizeOpenImage.Click += new System.EventHandler(this.btnResizeOpenImage_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(26, 28);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 12);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Width";
+            // 
+            // tbResizeWidth
+            // 
+            this.tbResizeWidth.Location = new System.Drawing.Point(80, 20);
+            this.tbResizeWidth.Name = "tbResizeWidth";
+            this.tbResizeWidth.Size = new System.Drawing.Size(100, 21);
+            this.tbResizeWidth.TabIndex = 0;
+            this.tbResizeWidth.Text = "100";
+            this.tbResizeWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tbResizeHeight
+            // 
+            this.tbResizeHeight.Location = new System.Drawing.Point(80, 47);
+            this.tbResizeHeight.Name = "tbResizeHeight";
+            this.tbResizeHeight.Size = new System.Drawing.Size(100, 21);
+            this.tbResizeHeight.TabIndex = 0;
+            this.tbResizeHeight.Text = "100";
+            this.tbResizeHeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // groupBox8
             // 
@@ -950,6 +1254,188 @@
             this.rbZoomIn.Text = "Zoom In";
             this.rbZoomIn.UseVisualStyleBackColor = true;
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.groupBox18);
+            this.tabPage4.Controls.Add(this.groupBox17);
+            this.tabPage4.Controls.Add(this.groupBox15);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(858, 397);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Bin/Math/Blur/Filter";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // groupBox15
+            // 
+            this.groupBox15.Controls.Add(this.btnBinOpen);
+            this.groupBox15.Controls.Add(this.label10);
+            this.groupBox15.Controls.Add(this.label9);
+            this.groupBox15.Controls.Add(this.tbBinMaxValue);
+            this.groupBox15.Controls.Add(this.tbBinThreshold);
+            this.groupBox15.Controls.Add(this.groupBox16);
+            this.groupBox15.Location = new System.Drawing.Point(8, 4);
+            this.groupBox15.Name = "groupBox15";
+            this.groupBox15.Size = new System.Drawing.Size(165, 390);
+            this.groupBox15.TabIndex = 0;
+            this.groupBox15.TabStop = false;
+            this.groupBox15.Text = "Binarization";
+            // 
+            // btnBinOpen
+            // 
+            this.btnBinOpen.Location = new System.Drawing.Point(8, 343);
+            this.btnBinOpen.Name = "btnBinOpen";
+            this.btnBinOpen.Size = new System.Drawing.Size(124, 23);
+            this.btnBinOpen.TabIndex = 3;
+            this.btnBinOpen.Text = "Bin Open Image";
+            this.btnBinOpen.UseVisualStyleBackColor = true;
+            this.btnBinOpen.Click += new System.EventHandler(this.btnBinOpen_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 308);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(116, 12);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "Max value (double)";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 259);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(114, 12);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "Threshold (double)";
+            // 
+            // tbBinMaxValue
+            // 
+            this.tbBinMaxValue.Location = new System.Drawing.Point(8, 284);
+            this.tbBinMaxValue.Name = "tbBinMaxValue";
+            this.tbBinMaxValue.Size = new System.Drawing.Size(100, 21);
+            this.tbBinMaxValue.TabIndex = 1;
+            this.tbBinMaxValue.Text = "255";
+            this.tbBinMaxValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tbBinThreshold
+            // 
+            this.tbBinThreshold.Location = new System.Drawing.Point(6, 235);
+            this.tbBinThreshold.Name = "tbBinThreshold";
+            this.tbBinThreshold.Size = new System.Drawing.Size(100, 21);
+            this.tbBinThreshold.TabIndex = 1;
+            this.tbBinThreshold.Text = "150";
+            this.tbBinThreshold.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // groupBox16
+            // 
+            this.groupBox16.Controls.Add(this.rbBinTypeTriangle);
+            this.groupBox16.Controls.Add(this.rbBinTypeOtsu);
+            this.groupBox16.Controls.Add(this.rbBinTypeMask);
+            this.groupBox16.Controls.Add(this.rbBinTypeTrunc);
+            this.groupBox16.Controls.Add(this.rbBinTypeTozeroInv);
+            this.groupBox16.Controls.Add(this.rbBinTypeBinaryInv);
+            this.groupBox16.Controls.Add(this.rbBinTypeTozero);
+            this.groupBox16.Controls.Add(this.rbBinTypeBinary);
+            this.groupBox16.Location = new System.Drawing.Point(7, 21);
+            this.groupBox16.Name = "groupBox16";
+            this.groupBox16.Size = new System.Drawing.Size(125, 208);
+            this.groupBox16.TabIndex = 0;
+            this.groupBox16.TabStop = false;
+            this.groupBox16.Text = "ThresholdTypes";
+            // 
+            // rbBinTypeTriangle
+            // 
+            this.rbBinTypeTriangle.AutoSize = true;
+            this.rbBinTypeTriangle.Location = new System.Drawing.Point(7, 175);
+            this.rbBinTypeTriangle.Name = "rbBinTypeTriangle";
+            this.rbBinTypeTriangle.Size = new System.Drawing.Size(69, 16);
+            this.rbBinTypeTriangle.TabIndex = 0;
+            this.rbBinTypeTriangle.Text = "Triangle";
+            this.rbBinTypeTriangle.UseVisualStyleBackColor = true;
+            // 
+            // rbBinTypeOtsu
+            // 
+            this.rbBinTypeOtsu.AutoSize = true;
+            this.rbBinTypeOtsu.Location = new System.Drawing.Point(7, 153);
+            this.rbBinTypeOtsu.Name = "rbBinTypeOtsu";
+            this.rbBinTypeOtsu.Size = new System.Drawing.Size(49, 16);
+            this.rbBinTypeOtsu.TabIndex = 0;
+            this.rbBinTypeOtsu.Text = "Otsu";
+            this.rbBinTypeOtsu.UseVisualStyleBackColor = true;
+            // 
+            // rbBinTypeMask
+            // 
+            this.rbBinTypeMask.AutoSize = true;
+            this.rbBinTypeMask.Location = new System.Drawing.Point(7, 131);
+            this.rbBinTypeMask.Name = "rbBinTypeMask";
+            this.rbBinTypeMask.Size = new System.Drawing.Size(54, 16);
+            this.rbBinTypeMask.TabIndex = 0;
+            this.rbBinTypeMask.Text = "Mask";
+            this.rbBinTypeMask.UseVisualStyleBackColor = true;
+            // 
+            // rbBinTypeTrunc
+            // 
+            this.rbBinTypeTrunc.AutoSize = true;
+            this.rbBinTypeTrunc.Location = new System.Drawing.Point(7, 65);
+            this.rbBinTypeTrunc.Name = "rbBinTypeTrunc";
+            this.rbBinTypeTrunc.Size = new System.Drawing.Size(56, 16);
+            this.rbBinTypeTrunc.TabIndex = 0;
+            this.rbBinTypeTrunc.Text = "Trunc";
+            this.rbBinTypeTrunc.UseVisualStyleBackColor = true;
+            // 
+            // rbBinTypeTozeroInv
+            // 
+            this.rbBinTypeTozeroInv.AutoSize = true;
+            this.rbBinTypeTozeroInv.Location = new System.Drawing.Point(6, 109);
+            this.rbBinTypeTozeroInv.Name = "rbBinTypeTozeroInv";
+            this.rbBinTypeTozeroInv.Size = new System.Drawing.Size(79, 16);
+            this.rbBinTypeTozeroInv.TabIndex = 0;
+            this.rbBinTypeTozeroInv.Text = "TozeroInv";
+            this.rbBinTypeTozeroInv.UseVisualStyleBackColor = true;
+            // 
+            // rbBinTypeBinaryInv
+            // 
+            this.rbBinTypeBinaryInv.AutoSize = true;
+            this.rbBinTypeBinaryInv.Location = new System.Drawing.Point(6, 43);
+            this.rbBinTypeBinaryInv.Name = "rbBinTypeBinaryInv";
+            this.rbBinTypeBinaryInv.Size = new System.Drawing.Size(75, 16);
+            this.rbBinTypeBinaryInv.TabIndex = 0;
+            this.rbBinTypeBinaryInv.Text = "BinaryInv";
+            this.rbBinTypeBinaryInv.UseVisualStyleBackColor = true;
+            // 
+            // rbBinTypeTozero
+            // 
+            this.rbBinTypeTozero.AutoSize = true;
+            this.rbBinTypeTozero.Location = new System.Drawing.Point(7, 87);
+            this.rbBinTypeTozero.Name = "rbBinTypeTozero";
+            this.rbBinTypeTozero.Size = new System.Drawing.Size(63, 16);
+            this.rbBinTypeTozero.TabIndex = 0;
+            this.rbBinTypeTozero.Text = "Tozero";
+            this.rbBinTypeTozero.UseVisualStyleBackColor = true;
+            // 
+            // rbBinTypeBinary
+            // 
+            this.rbBinTypeBinary.AutoSize = true;
+            this.rbBinTypeBinary.Checked = true;
+            this.rbBinTypeBinary.Location = new System.Drawing.Point(6, 21);
+            this.rbBinTypeBinary.Name = "rbBinTypeBinary";
+            this.rbBinTypeBinary.Size = new System.Drawing.Size(59, 16);
+            this.rbBinTypeBinary.TabIndex = 0;
+            this.rbBinTypeBinary.TabStop = true;
+            this.rbBinTypeBinary.Text = "Binary";
+            this.rbBinTypeBinary.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(858, 397);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Feature";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
             // splitContainer2
             // 
             this.splitContainer2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -973,171 +1459,166 @@
             this.richTextBoxLog.TabIndex = 0;
             this.richTextBoxLog.Text = "";
             // 
-            // groupBox11
+            // groupBox17
             // 
-            this.groupBox11.Controls.Add(this.groupBox13);
-            this.groupBox11.Controls.Add(this.groupBox12);
-            this.groupBox11.Controls.Add(this.label4);
-            this.groupBox11.Controls.Add(this.btnResizeOpenImage);
-            this.groupBox11.Controls.Add(this.label3);
-            this.groupBox11.Controls.Add(this.tbResizeWidth);
-            this.groupBox11.Controls.Add(this.tbResizeHeight);
-            this.groupBox11.Location = new System.Drawing.Point(404, 4);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(451, 390);
-            this.groupBox11.TabIndex = 1;
-            this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "Resize";
+            this.groupBox17.Controls.Add(this.btnAbsDiffImgOpen);
+            this.groupBox17.Controls.Add(this.btnAbsImgOpen);
+            this.groupBox17.Controls.Add(this.btnMinImgOpen);
+            this.groupBox17.Controls.Add(this.btnMaxImgOpen);
+            this.groupBox17.Controls.Add(this.btnDivImgOpen);
+            this.groupBox17.Controls.Add(this.btnMulImgOpen);
+            this.groupBox17.Controls.Add(this.btnSubImgOpen);
+            this.groupBox17.Controls.Add(this.btnCompareImgOpen);
+            this.groupBox17.Controls.Add(this.btnNotImgOpen);
+            this.groupBox17.Controls.Add(this.btnXorImgOpen);
+            this.groupBox17.Controls.Add(this.btnOrImgOpen);
+            this.groupBox17.Controls.Add(this.btnAndImgOpen);
+            this.groupBox17.Controls.Add(this.btnAddImgOpen);
+            this.groupBox17.Location = new System.Drawing.Point(179, 6);
+            this.groupBox17.Name = "groupBox17";
+            this.groupBox17.Size = new System.Drawing.Size(343, 388);
+            this.groupBox17.TabIndex = 1;
+            this.groupBox17.TabStop = false;
+            this.groupBox17.Text = "Image Math";
             // 
-            // btnResizeOpenImage
+            // btnAddImgOpen
             // 
-            this.btnResizeOpenImage.Location = new System.Drawing.Point(28, 84);
-            this.btnResizeOpenImage.Name = "btnResizeOpenImage";
-            this.btnResizeOpenImage.Size = new System.Drawing.Size(152, 23);
-            this.btnResizeOpenImage.TabIndex = 0;
-            this.btnResizeOpenImage.Text = "Resize Open Image";
-            this.btnResizeOpenImage.UseVisualStyleBackColor = true;
-            this.btnResizeOpenImage.Click += new System.EventHandler(this.btnResizeOpenImage_Click);
+            this.btnAddImgOpen.Location = new System.Drawing.Point(6, 20);
+            this.btnAddImgOpen.Name = "btnAddImgOpen";
+            this.btnAddImgOpen.Size = new System.Drawing.Size(117, 23);
+            this.btnAddImgOpen.TabIndex = 0;
+            this.btnAddImgOpen.Text = "add Img Open";
+            this.btnAddImgOpen.UseVisualStyleBackColor = true;
+            this.btnAddImgOpen.Click += new System.EventHandler(this.btnAddImgOpen_Click);
             // 
-            // tbResizeWidth
+            // btnSubImgOpen
             // 
-            this.tbResizeWidth.Location = new System.Drawing.Point(80, 20);
-            this.tbResizeWidth.Name = "tbResizeWidth";
-            this.tbResizeWidth.Size = new System.Drawing.Size(100, 21);
-            this.tbResizeWidth.TabIndex = 0;
-            this.tbResizeWidth.Text = "100";
-            this.tbResizeWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnSubImgOpen.Location = new System.Drawing.Point(6, 49);
+            this.btnSubImgOpen.Name = "btnSubImgOpen";
+            this.btnSubImgOpen.Size = new System.Drawing.Size(117, 23);
+            this.btnSubImgOpen.TabIndex = 0;
+            this.btnSubImgOpen.Text = "sub Img Open";
+            this.btnSubImgOpen.UseVisualStyleBackColor = true;
+            this.btnSubImgOpen.Click += new System.EventHandler(this.btnSubImgOpen_Click);
             // 
-            // tbResizeHeight
+            // btnMulImgOpen
             // 
-            this.tbResizeHeight.Location = new System.Drawing.Point(80, 47);
-            this.tbResizeHeight.Name = "tbResizeHeight";
-            this.tbResizeHeight.Size = new System.Drawing.Size(100, 21);
-            this.tbResizeHeight.TabIndex = 0;
-            this.tbResizeHeight.Text = "100";
-            this.tbResizeHeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnMulImgOpen.Location = new System.Drawing.Point(6, 77);
+            this.btnMulImgOpen.Name = "btnMulImgOpen";
+            this.btnMulImgOpen.Size = new System.Drawing.Size(117, 23);
+            this.btnMulImgOpen.TabIndex = 0;
+            this.btnMulImgOpen.Text = "mul Img Open";
+            this.btnMulImgOpen.UseVisualStyleBackColor = true;
+            this.btnMulImgOpen.Click += new System.EventHandler(this.btnMulImgOpen_Click);
             // 
-            // label3
+            // btnDivImgOpen
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(26, 28);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 12);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Width";
+            this.btnDivImgOpen.Location = new System.Drawing.Point(6, 106);
+            this.btnDivImgOpen.Name = "btnDivImgOpen";
+            this.btnDivImgOpen.Size = new System.Drawing.Size(117, 23);
+            this.btnDivImgOpen.TabIndex = 0;
+            this.btnDivImgOpen.Text = "div Img Open";
+            this.btnDivImgOpen.UseVisualStyleBackColor = true;
+            this.btnDivImgOpen.Click += new System.EventHandler(this.btnDivImgOpen_Click);
             // 
-            // label4
+            // btnMaxImgOpen
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(26, 50);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 12);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Height";
+            this.btnMaxImgOpen.Location = new System.Drawing.Point(6, 135);
+            this.btnMaxImgOpen.Name = "btnMaxImgOpen";
+            this.btnMaxImgOpen.Size = new System.Drawing.Size(117, 23);
+            this.btnMaxImgOpen.TabIndex = 0;
+            this.btnMaxImgOpen.Text = "max Img Open";
+            this.btnMaxImgOpen.UseVisualStyleBackColor = true;
+            this.btnMaxImgOpen.Click += new System.EventHandler(this.btnMaxImgOpen_Click);
             // 
-            // rbResizeAbsolute
+            // btnMinImgOpen
             // 
-            this.rbResizeAbsolute.AutoSize = true;
-            this.rbResizeAbsolute.Checked = true;
-            this.rbResizeAbsolute.Location = new System.Drawing.Point(6, 22);
-            this.rbResizeAbsolute.Name = "rbResizeAbsolute";
-            this.rbResizeAbsolute.Size = new System.Drawing.Size(101, 16);
-            this.rbResizeAbsolute.TabIndex = 2;
-            this.rbResizeAbsolute.TabStop = true;
-            this.rbResizeAbsolute.Text = "Absolute Size";
-            this.rbResizeAbsolute.UseVisualStyleBackColor = true;
+            this.btnMinImgOpen.Location = new System.Drawing.Point(6, 164);
+            this.btnMinImgOpen.Name = "btnMinImgOpen";
+            this.btnMinImgOpen.Size = new System.Drawing.Size(117, 23);
+            this.btnMinImgOpen.TabIndex = 0;
+            this.btnMinImgOpen.Text = "min Img Open";
+            this.btnMinImgOpen.UseVisualStyleBackColor = true;
+            this.btnMinImgOpen.Click += new System.EventHandler(this.btnMinImgOpen_Click);
             // 
-            // rbResizeRelative
+            // btnAbsImgOpen
             // 
-            this.rbResizeRelative.AutoSize = true;
-            this.rbResizeRelative.Location = new System.Drawing.Point(6, 44);
-            this.rbResizeRelative.Name = "rbResizeRelative";
-            this.rbResizeRelative.Size = new System.Drawing.Size(96, 16);
-            this.rbResizeRelative.TabIndex = 2;
-            this.rbResizeRelative.Text = "Relative Size";
-            this.rbResizeRelative.UseVisualStyleBackColor = true;
+            this.btnAbsImgOpen.Location = new System.Drawing.Point(6, 193);
+            this.btnAbsImgOpen.Name = "btnAbsImgOpen";
+            this.btnAbsImgOpen.Size = new System.Drawing.Size(117, 23);
+            this.btnAbsImgOpen.TabIndex = 0;
+            this.btnAbsImgOpen.Text = "abs Img Open";
+            this.btnAbsImgOpen.UseVisualStyleBackColor = true;
+            this.btnAbsImgOpen.Click += new System.EventHandler(this.btnAbsImgOpen_Click);
             // 
-            // groupBox12
+            // btnAbsDiffImgOpen
             // 
-            this.groupBox12.Controls.Add(this.rbResizeAbsolute);
-            this.groupBox12.Controls.Add(this.rbResizeRelative);
-            this.groupBox12.Location = new System.Drawing.Point(28, 128);
-            this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(120, 72);
-            this.groupBox12.TabIndex = 3;
-            this.groupBox12.TabStop = false;
-            this.groupBox12.Text = "Size Mode";
+            this.btnAbsDiffImgOpen.Location = new System.Drawing.Point(6, 222);
+            this.btnAbsDiffImgOpen.Name = "btnAbsDiffImgOpen";
+            this.btnAbsDiffImgOpen.Size = new System.Drawing.Size(117, 23);
+            this.btnAbsDiffImgOpen.TabIndex = 0;
+            this.btnAbsDiffImgOpen.Text = "absDiff Img Open";
+            this.btnAbsDiffImgOpen.UseVisualStyleBackColor = true;
+            this.btnAbsDiffImgOpen.Click += new System.EventHandler(this.btnAbsDiffImgOpen_Click);
             // 
-            // groupBox13
+            // btnAndImgOpen
             // 
-            this.groupBox13.Controls.Add(this.rbResizeFlagLanczos4);
-            this.groupBox13.Controls.Add(this.rbResizeFlagCubic);
-            this.groupBox13.Controls.Add(this.rbResizeFlagArea);
-            this.groupBox13.Controls.Add(this.rbResizeFlagLinear);
-            this.groupBox13.Controls.Add(this.rbResizeFlagNearest);
-            this.groupBox13.Location = new System.Drawing.Point(221, 20);
-            this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(200, 146);
-            this.groupBox13.TabIndex = 4;
-            this.groupBox13.TabStop = false;
-            this.groupBox13.Text = "InterpolationFlags";
+            this.btnAndImgOpen.Location = new System.Drawing.Point(181, 20);
+            this.btnAndImgOpen.Name = "btnAndImgOpen";
+            this.btnAndImgOpen.Size = new System.Drawing.Size(117, 23);
+            this.btnAndImgOpen.TabIndex = 0;
+            this.btnAndImgOpen.Text = "and Img Open";
+            this.btnAndImgOpen.UseVisualStyleBackColor = true;
+            this.btnAndImgOpen.Click += new System.EventHandler(this.btnAndImgOpen_Click);
             // 
-            // rbResizeFlagNearest
+            // btnOrImgOpen
             // 
-            this.rbResizeFlagNearest.AutoSize = true;
-            this.rbResizeFlagNearest.Location = new System.Drawing.Point(7, 22);
-            this.rbResizeFlagNearest.Name = "rbResizeFlagNearest";
-            this.rbResizeFlagNearest.Size = new System.Drawing.Size(67, 16);
-            this.rbResizeFlagNearest.TabIndex = 0;
-            this.rbResizeFlagNearest.Text = "Nearest";
-            this.toolTip1.SetToolTip(this.rbResizeFlagNearest, "가장 가까운 이웃 보간법");
-            this.rbResizeFlagNearest.UseVisualStyleBackColor = true;
+            this.btnOrImgOpen.Location = new System.Drawing.Point(181, 49);
+            this.btnOrImgOpen.Name = "btnOrImgOpen";
+            this.btnOrImgOpen.Size = new System.Drawing.Size(117, 23);
+            this.btnOrImgOpen.TabIndex = 0;
+            this.btnOrImgOpen.Text = "or Img Open";
+            this.btnOrImgOpen.UseVisualStyleBackColor = true;
+            this.btnOrImgOpen.Click += new System.EventHandler(this.btnOrImgOpen_Click);
             // 
-            // rbResizeFlagLinear
+            // btnXorImgOpen
             // 
-            this.rbResizeFlagLinear.AutoSize = true;
-            this.rbResizeFlagLinear.Checked = true;
-            this.rbResizeFlagLinear.Location = new System.Drawing.Point(7, 42);
-            this.rbResizeFlagLinear.Name = "rbResizeFlagLinear";
-            this.rbResizeFlagLinear.Size = new System.Drawing.Size(58, 16);
-            this.rbResizeFlagLinear.TabIndex = 0;
-            this.rbResizeFlagLinear.TabStop = true;
-            this.rbResizeFlagLinear.Text = "Linear";
-            this.toolTip1.SetToolTip(this.rbResizeFlagLinear, "쌍 선형 보간법");
-            this.rbResizeFlagLinear.UseVisualStyleBackColor = true;
+            this.btnXorImgOpen.Location = new System.Drawing.Point(181, 78);
+            this.btnXorImgOpen.Name = "btnXorImgOpen";
+            this.btnXorImgOpen.Size = new System.Drawing.Size(117, 23);
+            this.btnXorImgOpen.TabIndex = 0;
+            this.btnXorImgOpen.Text = "xor Img Open";
+            this.btnXorImgOpen.UseVisualStyleBackColor = true;
+            this.btnXorImgOpen.Click += new System.EventHandler(this.btnXorImgOpen_Click);
             // 
-            // rbResizeFlagArea
+            // btnNotImgOpen
             // 
-            this.rbResizeFlagArea.AutoSize = true;
-            this.rbResizeFlagArea.Location = new System.Drawing.Point(6, 64);
-            this.rbResizeFlagArea.Name = "rbResizeFlagArea";
-            this.rbResizeFlagArea.Size = new System.Drawing.Size(49, 16);
-            this.rbResizeFlagArea.TabIndex = 0;
-            this.rbResizeFlagArea.Text = "Area";
-            this.toolTip1.SetToolTip(this.rbResizeFlagArea, "영역 보간법");
-            this.rbResizeFlagArea.UseVisualStyleBackColor = true;
+            this.btnNotImgOpen.Location = new System.Drawing.Point(181, 107);
+            this.btnNotImgOpen.Name = "btnNotImgOpen";
+            this.btnNotImgOpen.Size = new System.Drawing.Size(117, 23);
+            this.btnNotImgOpen.TabIndex = 0;
+            this.btnNotImgOpen.Text = "not Img Open";
+            this.btnNotImgOpen.UseVisualStyleBackColor = true;
+            this.btnNotImgOpen.Click += new System.EventHandler(this.btnNotImgOpen_Click);
             // 
-            // rbResizeFlagCubic
+            // btnCompareImgOpen
             // 
-            this.rbResizeFlagCubic.AutoSize = true;
-            this.rbResizeFlagCubic.Location = new System.Drawing.Point(6, 86);
-            this.rbResizeFlagCubic.Name = "rbResizeFlagCubic";
-            this.rbResizeFlagCubic.Size = new System.Drawing.Size(56, 16);
-            this.rbResizeFlagCubic.TabIndex = 0;
-            this.rbResizeFlagCubic.Text = "Cubic";
-            this.toolTip1.SetToolTip(this.rbResizeFlagCubic, "4×4 바이 큐빅 보간법");
-            this.rbResizeFlagCubic.UseVisualStyleBackColor = true;
+            this.btnCompareImgOpen.Location = new System.Drawing.Point(181, 136);
+            this.btnCompareImgOpen.Name = "btnCompareImgOpen";
+            this.btnCompareImgOpen.Size = new System.Drawing.Size(134, 23);
+            this.btnCompareImgOpen.TabIndex = 0;
+            this.btnCompareImgOpen.Text = "compare Img Open";
+            this.btnCompareImgOpen.UseVisualStyleBackColor = true;
+            this.btnCompareImgOpen.Click += new System.EventHandler(this.btnCompareImgOpen_Click);
             // 
-            // rbResizeFlagLanczos4
+            // groupBox18
             // 
-            this.rbResizeFlagLanczos4.AutoSize = true;
-            this.rbResizeFlagLanczos4.Location = new System.Drawing.Point(7, 108);
-            this.rbResizeFlagLanczos4.Name = "rbResizeFlagLanczos4";
-            this.rbResizeFlagLanczos4.Size = new System.Drawing.Size(78, 16);
-            this.rbResizeFlagLanczos4.TabIndex = 0;
-            this.rbResizeFlagLanczos4.Text = "Lanczos4";
-            this.toolTip1.SetToolTip(this.rbResizeFlagLanczos4, "8×8 란초스 보간법");
-            this.rbResizeFlagLanczos4.UseVisualStyleBackColor = true;
+            this.groupBox18.Location = new System.Drawing.Point(528, 7);
+            this.groupBox18.Name = "groupBox18";
+            this.groupBox18.Size = new System.Drawing.Size(323, 387);
+            this.groupBox18.TabIndex = 2;
+            this.groupBox18.TabStop = false;
+            this.groupBox18.Text = "Blur/Filter";
             // 
             // Form1
             // 
@@ -1168,21 +1649,29 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabPage3.ResumeLayout(false);
+            this.groupBox14.ResumeLayout(false);
+            this.groupBox14.PerformLayout();
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox13.PerformLayout();
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox12.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            this.groupBox15.ResumeLayout(false);
+            this.groupBox15.PerformLayout();
+            this.groupBox16.ResumeLayout(false);
+            this.groupBox16.PerformLayout();
             this.splitContainer2.Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox11.PerformLayout();
-            this.groupBox12.ResumeLayout(false);
-            this.groupBox12.PerformLayout();
-            this.groupBox13.ResumeLayout(false);
-            this.groupBox13.PerformLayout();
+            this.groupBox17.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1278,6 +1767,47 @@
         private System.Windows.Forms.RadioButton rbResizeFlagArea;
         private System.Windows.Forms.RadioButton rbResizeFlagLinear;
         private System.Windows.Forms.RadioButton rbResizeFlagNearest;
+        private System.Windows.Forms.GroupBox groupBox14;
+        private System.Windows.Forms.TextBox tbSubtractHeight;
+        private System.Windows.Forms.TextBox tbSubtractWidth;
+        private System.Windows.Forms.TextBox tbSubtractY;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox tbSubtractX;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnSubtractOpen;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.GroupBox groupBox15;
+        private System.Windows.Forms.GroupBox groupBox16;
+        private System.Windows.Forms.RadioButton rbBinTypeBinary;
+        private System.Windows.Forms.RadioButton rbBinTypeOtsu;
+        private System.Windows.Forms.RadioButton rbBinTypeMask;
+        private System.Windows.Forms.RadioButton rbBinTypeTrunc;
+        private System.Windows.Forms.RadioButton rbBinTypeTozeroInv;
+        private System.Windows.Forms.RadioButton rbBinTypeBinaryInv;
+        private System.Windows.Forms.RadioButton rbBinTypeTozero;
+        private System.Windows.Forms.RadioButton rbBinTypeTriangle;
+        private System.Windows.Forms.TextBox tbBinMaxValue;
+        private System.Windows.Forms.TextBox tbBinThreshold;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button btnBinOpen;
+        private System.Windows.Forms.GroupBox groupBox17;
+        private System.Windows.Forms.Button btnAbsDiffImgOpen;
+        private System.Windows.Forms.Button btnAbsImgOpen;
+        private System.Windows.Forms.Button btnMinImgOpen;
+        private System.Windows.Forms.Button btnMaxImgOpen;
+        private System.Windows.Forms.Button btnDivImgOpen;
+        private System.Windows.Forms.Button btnMulImgOpen;
+        private System.Windows.Forms.Button btnSubImgOpen;
+        private System.Windows.Forms.Button btnAddImgOpen;
+        private System.Windows.Forms.Button btnAndImgOpen;
+        private System.Windows.Forms.Button btnCompareImgOpen;
+        private System.Windows.Forms.Button btnNotImgOpen;
+        private System.Windows.Forms.Button btnXorImgOpen;
+        private System.Windows.Forms.Button btnOrImgOpen;
+        private System.Windows.Forms.GroupBox groupBox18;
     }
 }
 

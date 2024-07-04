@@ -1,4 +1,5 @@
-﻿using OpenCvSharp;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenCvSharp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -131,7 +132,7 @@ namespace OpenCVSharp_demo
         }
 
 
-        public void FlipMode(String path, MatType type, FlipMode mode)
+        public void FlipImgMode(String path, MatType type, FlipMode mode)
         {
             try
             {
@@ -228,6 +229,331 @@ namespace OpenCVSharp_demo
                 Cv2.DestroyAllWindows();
             }
             catch (Exception e) { ERR(e.ToString()); }
+        }
+
+
+        public void Subtract(String path, int x, int y, int width, int height)
+        {
+            try
+            {
+                Mat src = new Mat(path);
+                Mat dst = src.SubMat(new Rect(x, y, width, height));
+
+                Cv2.ImShow("src", src);
+                Cv2.ImShow($"dst x {x} y {y} w {width} h {height}", dst);
+                Cv2.WaitKey(0);
+                Cv2.DestroyAllWindows();
+            }
+            catch (Exception e)
+            {
+                ERR(e.ToString());
+            }
+        }
+
+
+        public void Binarization(String path, double threshold, double maxValue, ThresholdTypes thType)
+        {
+            try
+            {
+                Mat src = new Mat(path);
+                Mat gray = new Mat();
+                Mat binary = new Mat();
+
+                Cv2.CvtColor(src, gray, ColorConversionCodes.BGR2GRAY);
+                Cv2.Threshold(gray, binary, 150, 255, thType);
+
+                Cv2.ImShow("src", src);
+                Cv2.ImShow("binary", binary);
+                Cv2.WaitKey(0);
+                Cv2.DestroyAllWindows();
+            }
+            catch (Exception e)
+            {
+                ERR(e.ToString());
+            }
+        }
+
+
+        public void AddImage(String path)
+        {
+            try
+            {
+                Mat src = new Mat(path, ImreadModes.ReducedColor2);
+                Mat val = new Mat(src.Size(), MatType.CV_8UC3, new Scalar(0, 0, 30));
+                Mat add = new Mat();
+
+                Cv2.Add(src, val, add);
+
+                Cv2.ImShow("src", src);
+                Cv2.ImShow("add", add);
+                Cv2.WaitKey(0);
+                Cv2.DestroyAllWindows();
+            }
+            catch (Exception e)
+            {
+                ERR(e.ToString());
+            }
+        }
+
+        public void SubtractImage(String path)
+        {
+            try
+            {
+                Mat src = new Mat(path, ImreadModes.ReducedColor2);
+                Mat val = new Mat(src.Size(), MatType.CV_8UC3, new Scalar(0, 0, 30));
+                Mat sub = new Mat();
+
+                Cv2.Subtract(src, val, sub);
+
+                Cv2.ImShow("src", src);
+                Cv2.ImShow("sub", sub);
+                Cv2.WaitKey(0);
+                Cv2.DestroyAllWindows();
+            }
+            catch (Exception e)
+            {
+                ERR(e.ToString());
+            }
+        }
+
+        public void MultiplyImage(String path)
+        {
+            try
+            {
+                Mat src = new Mat(path, ImreadModes.ReducedColor2);
+                Mat val = new Mat(src.Size(), MatType.CV_8UC3, new Scalar(0, 0, 30));
+                Mat mul = new Mat();
+
+                Cv2.Multiply(src, val, mul);
+
+                Cv2.ImShow("src", src);
+                Cv2.ImShow("mul", mul);
+                Cv2.WaitKey(0);
+                Cv2.DestroyAllWindows();
+            }
+            catch (Exception e)
+            {
+                ERR(e.ToString());
+            }
+        }
+
+        public void DivideImage(String path)
+        {
+            try
+            {
+                Mat src = new Mat(path, ImreadModes.ReducedColor2);
+                Mat val = new Mat(src.Size(), MatType.CV_8UC3, new Scalar(0, 0, 30));
+                Mat div = new Mat();
+
+                Cv2.Divide(src, val, div);
+
+                Cv2.ImShow("src", src);
+                Cv2.ImShow("div", div);
+                Cv2.WaitKey(0);
+                Cv2.DestroyAllWindows();
+            }
+            catch (Exception e)
+            {
+                ERR(e.ToString());
+            }
+        }
+        public void MaxImage(String path)
+        {
+            try
+            {
+                Mat src = new Mat(path, ImreadModes.ReducedColor2);
+                Mat val = new Mat(src.Size(), MatType.CV_8UC3, new Scalar(0, 0, 30));
+                Mat max = new Mat();
+
+                Cv2.Max(src, val, max);
+
+                Cv2.ImShow("src", src);
+                Cv2.ImShow("max", max);
+                Cv2.WaitKey(0);
+                Cv2.DestroyAllWindows();
+            }
+            catch (Exception e)
+            {
+                ERR(e.ToString());
+            }
+        }
+
+        public void MinImage(String path)
+        {
+            try
+            {
+                Mat src = new Mat(path, ImreadModes.ReducedColor2);
+                Mat val = new Mat(src.Size(), MatType.CV_8UC3, new Scalar(0, 0, 30));
+                Mat min = new Mat();
+
+                Cv2.Min(src, val, min);
+
+                Cv2.ImShow("src", src);
+                Cv2.ImShow("min", min);
+                Cv2.WaitKey(0);
+                Cv2.DestroyAllWindows();
+            }
+            catch (Exception e)
+            {
+                ERR(e.ToString());
+            }
+        }
+
+        public void AbsImage(String path)
+        {
+            try
+            {
+                Mat src = new Mat(path, ImreadModes.ReducedColor2);
+                Mat val = new Mat(src.Size(), MatType.CV_8UC3, new Scalar(0, 0, 30));
+                Mat abs = new Mat();
+                Mat mul = new Mat();
+
+                Cv2.Multiply(src, val, mul);
+
+                abs = Cv2.Abs(mul);
+
+                Cv2.ImShow("src", src);
+                Cv2.ImShow("abs", abs);
+                Cv2.WaitKey(0);
+                Cv2.DestroyAllWindows();
+            }
+            catch (Exception e)
+            {
+                ERR(e.ToString());
+            }
+        }
+
+        public void AbsDiffImage(String path)
+        {
+            try
+            {
+                Mat src = new Mat(path, ImreadModes.ReducedColor2);
+                Mat val = new Mat(src.Size(), MatType.CV_8UC3, new Scalar(0, 0, 30));
+                Mat mul = new Mat();
+                Mat absdiff = new Mat();
+
+                Cv2.Multiply(src, val, mul);
+
+                Cv2.Absdiff(src, mul, absdiff);
+
+                Cv2.ImShow("src", src);
+                Cv2.ImShow("absdiff", absdiff);
+                Cv2.WaitKey(0);
+                Cv2.DestroyAllWindows();
+            }
+            catch (Exception e)
+            {
+                ERR(e.ToString());
+            }
+        }
+
+        public void AndImage(String path)
+        {
+            try
+            {
+                Mat src1 = new Mat(path, ImreadModes.ReducedColor2);
+                Mat src2 = src1.Flip(FlipMode.Y);
+                Mat and = new Mat();
+
+                Cv2.BitwiseAnd(src1, src2, and);
+
+                Cv2.ImShow("src", src1);
+                Cv2.ImShow("and", and);
+
+                Cv2.WaitKey(0);
+                Cv2.DestroyAllWindows();
+            }
+            catch (Exception e)
+            {
+                ERR(e.ToString());
+            }
+        }
+
+        public void OrImage(String path)
+        {
+            try
+            {
+                Mat src1 = new Mat(path, ImreadModes.ReducedColor2);
+                Mat src2 = src1.Flip(FlipMode.Y);
+                Mat or = new Mat();
+
+                Cv2.BitwiseOr(src1, src2, or);
+
+                Cv2.ImShow("src", src1);
+                Cv2.ImShow("or", or);
+
+                Cv2.WaitKey(0);
+                Cv2.DestroyAllWindows();
+            }
+            catch (Exception e)
+            {
+                ERR(e.ToString());
+            }
+        }
+
+        public void XorImage(String path)
+        {
+            try
+            {
+                Mat src1 = new Mat(path, ImreadModes.ReducedColor2);
+                Mat src2 = src1.Flip(FlipMode.Y);
+                Mat xor = new Mat();
+
+                Cv2.BitwiseXor(src1, src2, xor);
+
+                Cv2.ImShow("src", src1);
+                Cv2.ImShow("xor", xor);
+
+                Cv2.WaitKey(0);
+                Cv2.DestroyAllWindows();
+            }
+            catch (Exception e)
+            {
+                ERR(e.ToString());
+            }
+        }
+
+        public void NotImage(String path)
+        {
+            try
+            {
+                Mat src1 = new Mat(path, ImreadModes.ReducedColor2);
+                Mat not = new Mat();
+
+                Cv2.BitwiseNot(src1, not);
+
+                Cv2.ImShow("src", src1);
+                Cv2.ImShow("not", not);
+
+                Cv2.WaitKey(0);
+                Cv2.DestroyAllWindows();
+            }
+            catch (Exception e)
+            {
+                ERR(e.ToString());
+            }
+        }
+
+        public void CompareImage(String path)
+        {
+            try
+            {
+                Mat src1 = new Mat(path, ImreadModes.ReducedColor2);
+                Mat src2 = src1.Flip(FlipMode.Y);
+                Mat cmp = new Mat();
+
+                Cv2.Compare(src1, src2, cmp, CmpType.EQ);
+
+                Cv2.ImShow("src", src1);
+                Cv2.ImShow("cmp", cmp);
+
+                Cv2.WaitKey(0);
+                Cv2.DestroyAllWindows();
+            }
+            catch (Exception e)
+            {
+                ERR(e.ToString());
+            }
         }
     }
 }
