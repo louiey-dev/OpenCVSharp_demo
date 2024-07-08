@@ -26,10 +26,13 @@
 - Binarization added
 - Image Math, add/sub/mul/div/max/min/abs/abs diff
 - Image bitwise, and/or/xor/not/compare added
+- Blur/BoxFilter/MedianBlur/GaussianBlurBilateralFilter added
+- Sobel/Scharr/Laplacian/Canny added
+- Contours/ApproxPoly/WarpAffine/AffineTranform/WarpPerspective/PerspectiveTransformation added
+- End of OpenCvSharp : 2024.07.08
 
 ## TODO
 
-- Add OpenCV additional features
 - Yolo feature
 - tflite feature
 

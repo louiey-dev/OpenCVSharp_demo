@@ -126,6 +126,21 @@
             this.rbZoomOut = new System.Windows.Forms.RadioButton();
             this.rbZoomIn = new System.Windows.Forms.RadioButton();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.groupBox18 = new System.Windows.Forms.GroupBox();
+            this.groupBox17 = new System.Windows.Forms.GroupBox();
+            this.btnAbsDiffImgOpen = new System.Windows.Forms.Button();
+            this.btnAbsImgOpen = new System.Windows.Forms.Button();
+            this.btnMinImgOpen = new System.Windows.Forms.Button();
+            this.btnMaxImgOpen = new System.Windows.Forms.Button();
+            this.btnDivImgOpen = new System.Windows.Forms.Button();
+            this.btnMulImgOpen = new System.Windows.Forms.Button();
+            this.btnSubImgOpen = new System.Windows.Forms.Button();
+            this.btnCompareImgOpen = new System.Windows.Forms.Button();
+            this.btnNotImgOpen = new System.Windows.Forms.Button();
+            this.btnXorImgOpen = new System.Windows.Forms.Button();
+            this.btnOrImgOpen = new System.Windows.Forms.Button();
+            this.btnAndImgOpen = new System.Windows.Forms.Button();
+            this.btnAddImgOpen = new System.Windows.Forms.Button();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
             this.btnBinOpen = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
@@ -145,21 +160,29 @@
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.richTextBoxLog = new System.Windows.Forms.RichTextBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.groupBox17 = new System.Windows.Forms.GroupBox();
-            this.btnAddImgOpen = new System.Windows.Forms.Button();
-            this.btnSubImgOpen = new System.Windows.Forms.Button();
-            this.btnMulImgOpen = new System.Windows.Forms.Button();
-            this.btnDivImgOpen = new System.Windows.Forms.Button();
-            this.btnMaxImgOpen = new System.Windows.Forms.Button();
-            this.btnMinImgOpen = new System.Windows.Forms.Button();
-            this.btnAbsImgOpen = new System.Windows.Forms.Button();
-            this.btnAbsDiffImgOpen = new System.Windows.Forms.Button();
-            this.btnAndImgOpen = new System.Windows.Forms.Button();
-            this.btnOrImgOpen = new System.Windows.Forms.Button();
-            this.btnXorImgOpen = new System.Windows.Forms.Button();
-            this.btnNotImgOpen = new System.Windows.Forms.Button();
-            this.btnCompareImgOpen = new System.Windows.Forms.Button();
-            this.groupBox18 = new System.Windows.Forms.GroupBox();
+            this.rbBlurBlur = new System.Windows.Forms.RadioButton();
+            this.rbBlurBoxFilter = new System.Windows.Forms.RadioButton();
+            this.rbBlurMedianBlur = new System.Windows.Forms.RadioButton();
+            this.rbBlurGaussianBlur = new System.Windows.Forms.RadioButton();
+            this.rbBlurBilateralFilter = new System.Windows.Forms.RadioButton();
+            this.btnBlur = new System.Windows.Forms.Button();
+            this.groupBox19 = new System.Windows.Forms.GroupBox();
+            this.btnEdgeOpen = new System.Windows.Forms.Button();
+            this.rbEdgeCanny = new System.Windows.Forms.RadioButton();
+            this.rbEdgeLaplacian = new System.Windows.Forms.RadioButton();
+            this.rbEdgeScharr = new System.Windows.Forms.RadioButton();
+            this.rbEdgeSobel = new System.Windows.Forms.RadioButton();
+            this.btnContourOpen = new System.Windows.Forms.Button();
+            this.btnDetectionApproxPoly = new System.Windows.Forms.Button();
+            this.btnContourTest1 = new System.Windows.Forms.Button();
+            this.btnContourTest2 = new System.Windows.Forms.Button();
+            this.groupBox20 = new System.Windows.Forms.GroupBox();
+            this.btnImgRotateWarpAffine = new System.Windows.Forms.Button();
+            this.btnRotateAffineTransformation = new System.Windows.Forms.Button();
+            this.tbRotateAngle = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.btnWarpPerspective = new System.Windows.Forms.Button();
+            this.btnPerspectiveTransformation = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -182,12 +205,16 @@
             this.groupBox10.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            this.groupBox18.SuspendLayout();
+            this.groupBox17.SuspendLayout();
             this.groupBox15.SuspendLayout();
             this.groupBox16.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.SuspendLayout();
-            this.groupBox17.SuspendLayout();
+            this.groupBox19.SuspendLayout();
+            this.groupBox20.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -1256,6 +1283,7 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.groupBox19);
             this.tabPage4.Controls.Add(this.groupBox18);
             this.tabPage4.Controls.Add(this.groupBox17);
             this.tabPage4.Controls.Add(this.groupBox15);
@@ -1265,6 +1293,173 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Bin/Math/Blur/Filter";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // groupBox18
+            // 
+            this.groupBox18.Controls.Add(this.btnBlur);
+            this.groupBox18.Controls.Add(this.rbBlurBilateralFilter);
+            this.groupBox18.Controls.Add(this.rbBlurGaussianBlur);
+            this.groupBox18.Controls.Add(this.rbBlurMedianBlur);
+            this.groupBox18.Controls.Add(this.rbBlurBoxFilter);
+            this.groupBox18.Controls.Add(this.rbBlurBlur);
+            this.groupBox18.Location = new System.Drawing.Point(528, 7);
+            this.groupBox18.Name = "groupBox18";
+            this.groupBox18.Size = new System.Drawing.Size(323, 165);
+            this.groupBox18.TabIndex = 2;
+            this.groupBox18.TabStop = false;
+            this.groupBox18.Text = "Blur/Filter";
+            // 
+            // groupBox17
+            // 
+            this.groupBox17.Controls.Add(this.btnAbsDiffImgOpen);
+            this.groupBox17.Controls.Add(this.btnAbsImgOpen);
+            this.groupBox17.Controls.Add(this.btnMinImgOpen);
+            this.groupBox17.Controls.Add(this.btnMaxImgOpen);
+            this.groupBox17.Controls.Add(this.btnDivImgOpen);
+            this.groupBox17.Controls.Add(this.btnMulImgOpen);
+            this.groupBox17.Controls.Add(this.btnSubImgOpen);
+            this.groupBox17.Controls.Add(this.btnCompareImgOpen);
+            this.groupBox17.Controls.Add(this.btnNotImgOpen);
+            this.groupBox17.Controls.Add(this.btnXorImgOpen);
+            this.groupBox17.Controls.Add(this.btnOrImgOpen);
+            this.groupBox17.Controls.Add(this.btnAndImgOpen);
+            this.groupBox17.Controls.Add(this.btnAddImgOpen);
+            this.groupBox17.Location = new System.Drawing.Point(179, 6);
+            this.groupBox17.Name = "groupBox17";
+            this.groupBox17.Size = new System.Drawing.Size(343, 388);
+            this.groupBox17.TabIndex = 1;
+            this.groupBox17.TabStop = false;
+            this.groupBox17.Text = "Image Math";
+            // 
+            // btnAbsDiffImgOpen
+            // 
+            this.btnAbsDiffImgOpen.Location = new System.Drawing.Point(6, 222);
+            this.btnAbsDiffImgOpen.Name = "btnAbsDiffImgOpen";
+            this.btnAbsDiffImgOpen.Size = new System.Drawing.Size(117, 23);
+            this.btnAbsDiffImgOpen.TabIndex = 0;
+            this.btnAbsDiffImgOpen.Text = "absDiff Img Open";
+            this.btnAbsDiffImgOpen.UseVisualStyleBackColor = true;
+            this.btnAbsDiffImgOpen.Click += new System.EventHandler(this.btnAbsDiffImgOpen_Click);
+            // 
+            // btnAbsImgOpen
+            // 
+            this.btnAbsImgOpen.Location = new System.Drawing.Point(6, 193);
+            this.btnAbsImgOpen.Name = "btnAbsImgOpen";
+            this.btnAbsImgOpen.Size = new System.Drawing.Size(117, 23);
+            this.btnAbsImgOpen.TabIndex = 0;
+            this.btnAbsImgOpen.Text = "abs Img Open";
+            this.btnAbsImgOpen.UseVisualStyleBackColor = true;
+            this.btnAbsImgOpen.Click += new System.EventHandler(this.btnAbsImgOpen_Click);
+            // 
+            // btnMinImgOpen
+            // 
+            this.btnMinImgOpen.Location = new System.Drawing.Point(6, 164);
+            this.btnMinImgOpen.Name = "btnMinImgOpen";
+            this.btnMinImgOpen.Size = new System.Drawing.Size(117, 23);
+            this.btnMinImgOpen.TabIndex = 0;
+            this.btnMinImgOpen.Text = "min Img Open";
+            this.btnMinImgOpen.UseVisualStyleBackColor = true;
+            this.btnMinImgOpen.Click += new System.EventHandler(this.btnMinImgOpen_Click);
+            // 
+            // btnMaxImgOpen
+            // 
+            this.btnMaxImgOpen.Location = new System.Drawing.Point(6, 135);
+            this.btnMaxImgOpen.Name = "btnMaxImgOpen";
+            this.btnMaxImgOpen.Size = new System.Drawing.Size(117, 23);
+            this.btnMaxImgOpen.TabIndex = 0;
+            this.btnMaxImgOpen.Text = "max Img Open";
+            this.btnMaxImgOpen.UseVisualStyleBackColor = true;
+            this.btnMaxImgOpen.Click += new System.EventHandler(this.btnMaxImgOpen_Click);
+            // 
+            // btnDivImgOpen
+            // 
+            this.btnDivImgOpen.Location = new System.Drawing.Point(6, 106);
+            this.btnDivImgOpen.Name = "btnDivImgOpen";
+            this.btnDivImgOpen.Size = new System.Drawing.Size(117, 23);
+            this.btnDivImgOpen.TabIndex = 0;
+            this.btnDivImgOpen.Text = "div Img Open";
+            this.btnDivImgOpen.UseVisualStyleBackColor = true;
+            this.btnDivImgOpen.Click += new System.EventHandler(this.btnDivImgOpen_Click);
+            // 
+            // btnMulImgOpen
+            // 
+            this.btnMulImgOpen.Location = new System.Drawing.Point(6, 77);
+            this.btnMulImgOpen.Name = "btnMulImgOpen";
+            this.btnMulImgOpen.Size = new System.Drawing.Size(117, 23);
+            this.btnMulImgOpen.TabIndex = 0;
+            this.btnMulImgOpen.Text = "mul Img Open";
+            this.btnMulImgOpen.UseVisualStyleBackColor = true;
+            this.btnMulImgOpen.Click += new System.EventHandler(this.btnMulImgOpen_Click);
+            // 
+            // btnSubImgOpen
+            // 
+            this.btnSubImgOpen.Location = new System.Drawing.Point(6, 49);
+            this.btnSubImgOpen.Name = "btnSubImgOpen";
+            this.btnSubImgOpen.Size = new System.Drawing.Size(117, 23);
+            this.btnSubImgOpen.TabIndex = 0;
+            this.btnSubImgOpen.Text = "sub Img Open";
+            this.btnSubImgOpen.UseVisualStyleBackColor = true;
+            this.btnSubImgOpen.Click += new System.EventHandler(this.btnSubImgOpen_Click);
+            // 
+            // btnCompareImgOpen
+            // 
+            this.btnCompareImgOpen.Location = new System.Drawing.Point(181, 136);
+            this.btnCompareImgOpen.Name = "btnCompareImgOpen";
+            this.btnCompareImgOpen.Size = new System.Drawing.Size(134, 23);
+            this.btnCompareImgOpen.TabIndex = 0;
+            this.btnCompareImgOpen.Text = "compare Img Open";
+            this.btnCompareImgOpen.UseVisualStyleBackColor = true;
+            this.btnCompareImgOpen.Click += new System.EventHandler(this.btnCompareImgOpen_Click);
+            // 
+            // btnNotImgOpen
+            // 
+            this.btnNotImgOpen.Location = new System.Drawing.Point(181, 107);
+            this.btnNotImgOpen.Name = "btnNotImgOpen";
+            this.btnNotImgOpen.Size = new System.Drawing.Size(117, 23);
+            this.btnNotImgOpen.TabIndex = 0;
+            this.btnNotImgOpen.Text = "not Img Open";
+            this.btnNotImgOpen.UseVisualStyleBackColor = true;
+            this.btnNotImgOpen.Click += new System.EventHandler(this.btnNotImgOpen_Click);
+            // 
+            // btnXorImgOpen
+            // 
+            this.btnXorImgOpen.Location = new System.Drawing.Point(181, 78);
+            this.btnXorImgOpen.Name = "btnXorImgOpen";
+            this.btnXorImgOpen.Size = new System.Drawing.Size(117, 23);
+            this.btnXorImgOpen.TabIndex = 0;
+            this.btnXorImgOpen.Text = "xor Img Open";
+            this.btnXorImgOpen.UseVisualStyleBackColor = true;
+            this.btnXorImgOpen.Click += new System.EventHandler(this.btnXorImgOpen_Click);
+            // 
+            // btnOrImgOpen
+            // 
+            this.btnOrImgOpen.Location = new System.Drawing.Point(181, 49);
+            this.btnOrImgOpen.Name = "btnOrImgOpen";
+            this.btnOrImgOpen.Size = new System.Drawing.Size(117, 23);
+            this.btnOrImgOpen.TabIndex = 0;
+            this.btnOrImgOpen.Text = "or Img Open";
+            this.btnOrImgOpen.UseVisualStyleBackColor = true;
+            this.btnOrImgOpen.Click += new System.EventHandler(this.btnOrImgOpen_Click);
+            // 
+            // btnAndImgOpen
+            // 
+            this.btnAndImgOpen.Location = new System.Drawing.Point(181, 20);
+            this.btnAndImgOpen.Name = "btnAndImgOpen";
+            this.btnAndImgOpen.Size = new System.Drawing.Size(117, 23);
+            this.btnAndImgOpen.TabIndex = 0;
+            this.btnAndImgOpen.Text = "and Img Open";
+            this.btnAndImgOpen.UseVisualStyleBackColor = true;
+            this.btnAndImgOpen.Click += new System.EventHandler(this.btnAndImgOpen_Click);
+            // 
+            // btnAddImgOpen
+            // 
+            this.btnAddImgOpen.Location = new System.Drawing.Point(6, 20);
+            this.btnAddImgOpen.Name = "btnAddImgOpen";
+            this.btnAddImgOpen.Size = new System.Drawing.Size(117, 23);
+            this.btnAddImgOpen.TabIndex = 0;
+            this.btnAddImgOpen.Text = "add Img Open";
+            this.btnAddImgOpen.UseVisualStyleBackColor = true;
+            this.btnAddImgOpen.Click += new System.EventHandler(this.btnAddImgOpen_Click);
             // 
             // groupBox15
             // 
@@ -1428,12 +1623,19 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.btnPerspectiveTransformation);
+            this.tabPage2.Controls.Add(this.btnWarpPerspective);
+            this.tabPage2.Controls.Add(this.groupBox20);
+            this.tabPage2.Controls.Add(this.btnContourTest2);
+            this.tabPage2.Controls.Add(this.btnContourTest1);
+            this.tabPage2.Controls.Add(this.btnDetectionApproxPoly);
+            this.tabPage2.Controls.Add(this.btnContourOpen);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(858, 397);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Feature";
+            this.tabPage2.Text = "Contours Detection";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // splitContainer2
@@ -1459,166 +1661,244 @@
             this.richTextBoxLog.TabIndex = 0;
             this.richTextBoxLog.Text = "";
             // 
-            // groupBox17
+            // rbBlurBlur
             // 
-            this.groupBox17.Controls.Add(this.btnAbsDiffImgOpen);
-            this.groupBox17.Controls.Add(this.btnAbsImgOpen);
-            this.groupBox17.Controls.Add(this.btnMinImgOpen);
-            this.groupBox17.Controls.Add(this.btnMaxImgOpen);
-            this.groupBox17.Controls.Add(this.btnDivImgOpen);
-            this.groupBox17.Controls.Add(this.btnMulImgOpen);
-            this.groupBox17.Controls.Add(this.btnSubImgOpen);
-            this.groupBox17.Controls.Add(this.btnCompareImgOpen);
-            this.groupBox17.Controls.Add(this.btnNotImgOpen);
-            this.groupBox17.Controls.Add(this.btnXorImgOpen);
-            this.groupBox17.Controls.Add(this.btnOrImgOpen);
-            this.groupBox17.Controls.Add(this.btnAndImgOpen);
-            this.groupBox17.Controls.Add(this.btnAddImgOpen);
-            this.groupBox17.Location = new System.Drawing.Point(179, 6);
-            this.groupBox17.Name = "groupBox17";
-            this.groupBox17.Size = new System.Drawing.Size(343, 388);
-            this.groupBox17.TabIndex = 1;
-            this.groupBox17.TabStop = false;
-            this.groupBox17.Text = "Image Math";
+            this.rbBlurBlur.AutoSize = true;
+            this.rbBlurBlur.Checked = true;
+            this.rbBlurBlur.Location = new System.Drawing.Point(18, 22);
+            this.rbBlurBlur.Name = "rbBlurBlur";
+            this.rbBlurBlur.Size = new System.Drawing.Size(45, 16);
+            this.rbBlurBlur.TabIndex = 0;
+            this.rbBlurBlur.TabStop = true;
+            this.rbBlurBlur.Text = "Blur";
+            this.rbBlurBlur.UseVisualStyleBackColor = true;
             // 
-            // btnAddImgOpen
+            // rbBlurBoxFilter
             // 
-            this.btnAddImgOpen.Location = new System.Drawing.Point(6, 20);
-            this.btnAddImgOpen.Name = "btnAddImgOpen";
-            this.btnAddImgOpen.Size = new System.Drawing.Size(117, 23);
-            this.btnAddImgOpen.TabIndex = 0;
-            this.btnAddImgOpen.Text = "add Img Open";
-            this.btnAddImgOpen.UseVisualStyleBackColor = true;
-            this.btnAddImgOpen.Click += new System.EventHandler(this.btnAddImgOpen_Click);
+            this.rbBlurBoxFilter.AutoSize = true;
+            this.rbBlurBoxFilter.Location = new System.Drawing.Point(18, 44);
+            this.rbBlurBoxFilter.Name = "rbBlurBoxFilter";
+            this.rbBlurBoxFilter.Size = new System.Drawing.Size(72, 16);
+            this.rbBlurBoxFilter.TabIndex = 0;
+            this.rbBlurBoxFilter.Text = "BoxFilter";
+            this.rbBlurBoxFilter.UseVisualStyleBackColor = true;
             // 
-            // btnSubImgOpen
+            // rbBlurMedianBlur
             // 
-            this.btnSubImgOpen.Location = new System.Drawing.Point(6, 49);
-            this.btnSubImgOpen.Name = "btnSubImgOpen";
-            this.btnSubImgOpen.Size = new System.Drawing.Size(117, 23);
-            this.btnSubImgOpen.TabIndex = 0;
-            this.btnSubImgOpen.Text = "sub Img Open";
-            this.btnSubImgOpen.UseVisualStyleBackColor = true;
-            this.btnSubImgOpen.Click += new System.EventHandler(this.btnSubImgOpen_Click);
+            this.rbBlurMedianBlur.AutoSize = true;
+            this.rbBlurMedianBlur.Location = new System.Drawing.Point(18, 66);
+            this.rbBlurMedianBlur.Name = "rbBlurMedianBlur";
+            this.rbBlurMedianBlur.Size = new System.Drawing.Size(87, 16);
+            this.rbBlurMedianBlur.TabIndex = 0;
+            this.rbBlurMedianBlur.Text = "MedianBlur";
+            this.rbBlurMedianBlur.UseVisualStyleBackColor = true;
             // 
-            // btnMulImgOpen
+            // rbBlurGaussianBlur
             // 
-            this.btnMulImgOpen.Location = new System.Drawing.Point(6, 77);
-            this.btnMulImgOpen.Name = "btnMulImgOpen";
-            this.btnMulImgOpen.Size = new System.Drawing.Size(117, 23);
-            this.btnMulImgOpen.TabIndex = 0;
-            this.btnMulImgOpen.Text = "mul Img Open";
-            this.btnMulImgOpen.UseVisualStyleBackColor = true;
-            this.btnMulImgOpen.Click += new System.EventHandler(this.btnMulImgOpen_Click);
+            this.rbBlurGaussianBlur.AutoSize = true;
+            this.rbBlurGaussianBlur.Location = new System.Drawing.Point(18, 88);
+            this.rbBlurGaussianBlur.Name = "rbBlurGaussianBlur";
+            this.rbBlurGaussianBlur.Size = new System.Drawing.Size(99, 16);
+            this.rbBlurGaussianBlur.TabIndex = 0;
+            this.rbBlurGaussianBlur.Text = "GaussianBlur";
+            this.rbBlurGaussianBlur.UseVisualStyleBackColor = true;
             // 
-            // btnDivImgOpen
+            // rbBlurBilateralFilter
             // 
-            this.btnDivImgOpen.Location = new System.Drawing.Point(6, 106);
-            this.btnDivImgOpen.Name = "btnDivImgOpen";
-            this.btnDivImgOpen.Size = new System.Drawing.Size(117, 23);
-            this.btnDivImgOpen.TabIndex = 0;
-            this.btnDivImgOpen.Text = "div Img Open";
-            this.btnDivImgOpen.UseVisualStyleBackColor = true;
-            this.btnDivImgOpen.Click += new System.EventHandler(this.btnDivImgOpen_Click);
+            this.rbBlurBilateralFilter.AutoSize = true;
+            this.rbBlurBilateralFilter.Location = new System.Drawing.Point(18, 110);
+            this.rbBlurBilateralFilter.Name = "rbBlurBilateralFilter";
+            this.rbBlurBilateralFilter.Size = new System.Drawing.Size(95, 16);
+            this.rbBlurBilateralFilter.TabIndex = 0;
+            this.rbBlurBilateralFilter.Text = "BilateralFilter";
+            this.rbBlurBilateralFilter.UseVisualStyleBackColor = true;
             // 
-            // btnMaxImgOpen
+            // btnBlur
             // 
-            this.btnMaxImgOpen.Location = new System.Drawing.Point(6, 135);
-            this.btnMaxImgOpen.Name = "btnMaxImgOpen";
-            this.btnMaxImgOpen.Size = new System.Drawing.Size(117, 23);
-            this.btnMaxImgOpen.TabIndex = 0;
-            this.btnMaxImgOpen.Text = "max Img Open";
-            this.btnMaxImgOpen.UseVisualStyleBackColor = true;
-            this.btnMaxImgOpen.Click += new System.EventHandler(this.btnMaxImgOpen_Click);
+            this.btnBlur.Location = new System.Drawing.Point(18, 133);
+            this.btnBlur.Name = "btnBlur";
+            this.btnBlur.Size = new System.Drawing.Size(99, 23);
+            this.btnBlur.TabIndex = 1;
+            this.btnBlur.Text = "Blur Img Open";
+            this.btnBlur.UseVisualStyleBackColor = true;
+            this.btnBlur.Click += new System.EventHandler(this.btnBlur_Click);
             // 
-            // btnMinImgOpen
+            // groupBox19
             // 
-            this.btnMinImgOpen.Location = new System.Drawing.Point(6, 164);
-            this.btnMinImgOpen.Name = "btnMinImgOpen";
-            this.btnMinImgOpen.Size = new System.Drawing.Size(117, 23);
-            this.btnMinImgOpen.TabIndex = 0;
-            this.btnMinImgOpen.Text = "min Img Open";
-            this.btnMinImgOpen.UseVisualStyleBackColor = true;
-            this.btnMinImgOpen.Click += new System.EventHandler(this.btnMinImgOpen_Click);
+            this.groupBox19.Controls.Add(this.btnEdgeOpen);
+            this.groupBox19.Controls.Add(this.rbEdgeCanny);
+            this.groupBox19.Controls.Add(this.rbEdgeLaplacian);
+            this.groupBox19.Controls.Add(this.rbEdgeScharr);
+            this.groupBox19.Controls.Add(this.rbEdgeSobel);
+            this.groupBox19.Location = new System.Drawing.Point(528, 178);
+            this.groupBox19.Name = "groupBox19";
+            this.groupBox19.Size = new System.Drawing.Size(323, 216);
+            this.groupBox19.TabIndex = 2;
+            this.groupBox19.TabStop = false;
+            this.groupBox19.Text = "Edge Detection";
             // 
-            // btnAbsImgOpen
+            // btnEdgeOpen
             // 
-            this.btnAbsImgOpen.Location = new System.Drawing.Point(6, 193);
-            this.btnAbsImgOpen.Name = "btnAbsImgOpen";
-            this.btnAbsImgOpen.Size = new System.Drawing.Size(117, 23);
-            this.btnAbsImgOpen.TabIndex = 0;
-            this.btnAbsImgOpen.Text = "abs Img Open";
-            this.btnAbsImgOpen.UseVisualStyleBackColor = true;
-            this.btnAbsImgOpen.Click += new System.EventHandler(this.btnAbsImgOpen_Click);
+            this.btnEdgeOpen.Location = new System.Drawing.Point(18, 123);
+            this.btnEdgeOpen.Name = "btnEdgeOpen";
+            this.btnEdgeOpen.Size = new System.Drawing.Size(99, 23);
+            this.btnEdgeOpen.TabIndex = 1;
+            this.btnEdgeOpen.Text = "Edge Img Open";
+            this.btnEdgeOpen.UseVisualStyleBackColor = true;
+            this.btnEdgeOpen.Click += new System.EventHandler(this.btnEdgeOpen_Click);
             // 
-            // btnAbsDiffImgOpen
+            // rbEdgeCanny
             // 
-            this.btnAbsDiffImgOpen.Location = new System.Drawing.Point(6, 222);
-            this.btnAbsDiffImgOpen.Name = "btnAbsDiffImgOpen";
-            this.btnAbsDiffImgOpen.Size = new System.Drawing.Size(117, 23);
-            this.btnAbsDiffImgOpen.TabIndex = 0;
-            this.btnAbsDiffImgOpen.Text = "absDiff Img Open";
-            this.btnAbsDiffImgOpen.UseVisualStyleBackColor = true;
-            this.btnAbsDiffImgOpen.Click += new System.EventHandler(this.btnAbsDiffImgOpen_Click);
+            this.rbEdgeCanny.AutoSize = true;
+            this.rbEdgeCanny.Location = new System.Drawing.Point(18, 88);
+            this.rbEdgeCanny.Name = "rbEdgeCanny";
+            this.rbEdgeCanny.Size = new System.Drawing.Size(60, 16);
+            this.rbEdgeCanny.TabIndex = 0;
+            this.rbEdgeCanny.Text = "Canny";
+            this.rbEdgeCanny.UseVisualStyleBackColor = true;
             // 
-            // btnAndImgOpen
+            // rbEdgeLaplacian
             // 
-            this.btnAndImgOpen.Location = new System.Drawing.Point(181, 20);
-            this.btnAndImgOpen.Name = "btnAndImgOpen";
-            this.btnAndImgOpen.Size = new System.Drawing.Size(117, 23);
-            this.btnAndImgOpen.TabIndex = 0;
-            this.btnAndImgOpen.Text = "and Img Open";
-            this.btnAndImgOpen.UseVisualStyleBackColor = true;
-            this.btnAndImgOpen.Click += new System.EventHandler(this.btnAndImgOpen_Click);
+            this.rbEdgeLaplacian.AutoSize = true;
+            this.rbEdgeLaplacian.Location = new System.Drawing.Point(18, 66);
+            this.rbEdgeLaplacian.Name = "rbEdgeLaplacian";
+            this.rbEdgeLaplacian.Size = new System.Drawing.Size(78, 16);
+            this.rbEdgeLaplacian.TabIndex = 0;
+            this.rbEdgeLaplacian.Text = "Laplacian";
+            this.rbEdgeLaplacian.UseVisualStyleBackColor = true;
             // 
-            // btnOrImgOpen
+            // rbEdgeScharr
             // 
-            this.btnOrImgOpen.Location = new System.Drawing.Point(181, 49);
-            this.btnOrImgOpen.Name = "btnOrImgOpen";
-            this.btnOrImgOpen.Size = new System.Drawing.Size(117, 23);
-            this.btnOrImgOpen.TabIndex = 0;
-            this.btnOrImgOpen.Text = "or Img Open";
-            this.btnOrImgOpen.UseVisualStyleBackColor = true;
-            this.btnOrImgOpen.Click += new System.EventHandler(this.btnOrImgOpen_Click);
+            this.rbEdgeScharr.AutoSize = true;
+            this.rbEdgeScharr.Location = new System.Drawing.Point(18, 44);
+            this.rbEdgeScharr.Name = "rbEdgeScharr";
+            this.rbEdgeScharr.Size = new System.Drawing.Size(60, 16);
+            this.rbEdgeScharr.TabIndex = 0;
+            this.rbEdgeScharr.Text = "Scharr";
+            this.rbEdgeScharr.UseVisualStyleBackColor = true;
             // 
-            // btnXorImgOpen
+            // rbEdgeSobel
             // 
-            this.btnXorImgOpen.Location = new System.Drawing.Point(181, 78);
-            this.btnXorImgOpen.Name = "btnXorImgOpen";
-            this.btnXorImgOpen.Size = new System.Drawing.Size(117, 23);
-            this.btnXorImgOpen.TabIndex = 0;
-            this.btnXorImgOpen.Text = "xor Img Open";
-            this.btnXorImgOpen.UseVisualStyleBackColor = true;
-            this.btnXorImgOpen.Click += new System.EventHandler(this.btnXorImgOpen_Click);
+            this.rbEdgeSobel.AutoSize = true;
+            this.rbEdgeSobel.Checked = true;
+            this.rbEdgeSobel.Location = new System.Drawing.Point(18, 22);
+            this.rbEdgeSobel.Name = "rbEdgeSobel";
+            this.rbEdgeSobel.Size = new System.Drawing.Size(55, 16);
+            this.rbEdgeSobel.TabIndex = 0;
+            this.rbEdgeSobel.TabStop = true;
+            this.rbEdgeSobel.Text = "Sobel";
+            this.rbEdgeSobel.UseVisualStyleBackColor = true;
             // 
-            // btnNotImgOpen
+            // btnContourOpen
             // 
-            this.btnNotImgOpen.Location = new System.Drawing.Point(181, 107);
-            this.btnNotImgOpen.Name = "btnNotImgOpen";
-            this.btnNotImgOpen.Size = new System.Drawing.Size(117, 23);
-            this.btnNotImgOpen.TabIndex = 0;
-            this.btnNotImgOpen.Text = "not Img Open";
-            this.btnNotImgOpen.UseVisualStyleBackColor = true;
-            this.btnNotImgOpen.Click += new System.EventHandler(this.btnNotImgOpen_Click);
+            this.btnContourOpen.Location = new System.Drawing.Point(17, 17);
+            this.btnContourOpen.Name = "btnContourOpen";
+            this.btnContourOpen.Size = new System.Drawing.Size(124, 23);
+            this.btnContourOpen.TabIndex = 4;
+            this.btnContourOpen.Text = "Contour Img Open";
+            this.btnContourOpen.UseVisualStyleBackColor = true;
+            this.btnContourOpen.Click += new System.EventHandler(this.btnContourOpen_Click);
             // 
-            // btnCompareImgOpen
+            // btnDetectionApproxPoly
             // 
-            this.btnCompareImgOpen.Location = new System.Drawing.Point(181, 136);
-            this.btnCompareImgOpen.Name = "btnCompareImgOpen";
-            this.btnCompareImgOpen.Size = new System.Drawing.Size(134, 23);
-            this.btnCompareImgOpen.TabIndex = 0;
-            this.btnCompareImgOpen.Text = "compare Img Open";
-            this.btnCompareImgOpen.UseVisualStyleBackColor = true;
-            this.btnCompareImgOpen.Click += new System.EventHandler(this.btnCompareImgOpen_Click);
+            this.btnDetectionApproxPoly.Location = new System.Drawing.Point(17, 62);
+            this.btnDetectionApproxPoly.Name = "btnDetectionApproxPoly";
+            this.btnDetectionApproxPoly.Size = new System.Drawing.Size(156, 23);
+            this.btnDetectionApproxPoly.TabIndex = 5;
+            this.btnDetectionApproxPoly.Text = "Approx Poly Img Open";
+            this.btnDetectionApproxPoly.UseVisualStyleBackColor = true;
+            this.btnDetectionApproxPoly.Click += new System.EventHandler(this.btnDetectionApproxPoly_Click);
             // 
-            // groupBox18
+            // btnContourTest1
             // 
-            this.groupBox18.Location = new System.Drawing.Point(528, 7);
-            this.groupBox18.Name = "groupBox18";
-            this.groupBox18.Size = new System.Drawing.Size(323, 387);
-            this.groupBox18.TabIndex = 2;
-            this.groupBox18.TabStop = false;
-            this.groupBox18.Text = "Blur/Filter";
+            this.btnContourTest1.Location = new System.Drawing.Point(17, 110);
+            this.btnContourTest1.Name = "btnContourTest1";
+            this.btnContourTest1.Size = new System.Drawing.Size(156, 23);
+            this.btnContourTest1.TabIndex = 6;
+            this.btnContourTest1.Text = "Contour Test1";
+            this.btnContourTest1.UseVisualStyleBackColor = true;
+            this.btnContourTest1.Click += new System.EventHandler(this.btnContourTest1_Click);
+            // 
+            // btnContourTest2
+            // 
+            this.btnContourTest2.Location = new System.Drawing.Point(17, 157);
+            this.btnContourTest2.Name = "btnContourTest2";
+            this.btnContourTest2.Size = new System.Drawing.Size(156, 23);
+            this.btnContourTest2.TabIndex = 6;
+            this.btnContourTest2.Text = "Contour Test2";
+            this.btnContourTest2.UseVisualStyleBackColor = true;
+            this.btnContourTest2.Click += new System.EventHandler(this.btnContourTest2_Click);
+            // 
+            // groupBox20
+            // 
+            this.groupBox20.Controls.Add(this.label11);
+            this.groupBox20.Controls.Add(this.tbRotateAngle);
+            this.groupBox20.Controls.Add(this.btnRotateAffineTransformation);
+            this.groupBox20.Controls.Add(this.btnImgRotateWarpAffine);
+            this.groupBox20.Location = new System.Drawing.Point(213, 6);
+            this.groupBox20.Name = "groupBox20";
+            this.groupBox20.Size = new System.Drawing.Size(241, 385);
+            this.groupBox20.TabIndex = 7;
+            this.groupBox20.TabStop = false;
+            this.groupBox20.Text = "Image Rotation";
+            // 
+            // btnImgRotateWarpAffine
+            // 
+            this.btnImgRotateWarpAffine.Location = new System.Drawing.Point(18, 47);
+            this.btnImgRotateWarpAffine.Name = "btnImgRotateWarpAffine";
+            this.btnImgRotateWarpAffine.Size = new System.Drawing.Size(125, 23);
+            this.btnImgRotateWarpAffine.TabIndex = 0;
+            this.btnImgRotateWarpAffine.Text = "WarpAffine Open";
+            this.btnImgRotateWarpAffine.UseVisualStyleBackColor = true;
+            this.btnImgRotateWarpAffine.Click += new System.EventHandler(this.btnImgRotateWarpAffine_Click);
+            // 
+            // btnRotateAffineTransformation
+            // 
+            this.btnRotateAffineTransformation.Location = new System.Drawing.Point(18, 76);
+            this.btnRotateAffineTransformation.Name = "btnRotateAffineTransformation";
+            this.btnRotateAffineTransformation.Size = new System.Drawing.Size(176, 23);
+            this.btnRotateAffineTransformation.TabIndex = 0;
+            this.btnRotateAffineTransformation.Text = "Affine Transformation Open";
+            this.btnRotateAffineTransformation.UseVisualStyleBackColor = true;
+            this.btnRotateAffineTransformation.Click += new System.EventHandler(this.btnRotateAffineTransformation_Click);
+            // 
+            // tbRotateAngle
+            // 
+            this.tbRotateAngle.Location = new System.Drawing.Point(68, 20);
+            this.tbRotateAngle.Name = "tbRotateAngle";
+            this.tbRotateAngle.Size = new System.Drawing.Size(75, 21);
+            this.tbRotateAngle.TabIndex = 1;
+            this.tbRotateAngle.Text = "45";
+            this.tbRotateAngle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(16, 25);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(46, 12);
+            this.label11.TabIndex = 2;
+            this.label11.Text = "0 ~ 360";
+            // 
+            // btnWarpPerspective
+            // 
+            this.btnWarpPerspective.Location = new System.Drawing.Point(472, 24);
+            this.btnWarpPerspective.Name = "btnWarpPerspective";
+            this.btnWarpPerspective.Size = new System.Drawing.Size(127, 23);
+            this.btnWarpPerspective.TabIndex = 8;
+            this.btnWarpPerspective.Text = "Warp Perspective";
+            this.btnWarpPerspective.UseVisualStyleBackColor = true;
+            this.btnWarpPerspective.Click += new System.EventHandler(this.btnWarpPerspective_Click);
+            // 
+            // btnPerspectiveTransformation
+            // 
+            this.btnPerspectiveTransformation.Location = new System.Drawing.Point(472, 61);
+            this.btnPerspectiveTransformation.Name = "btnPerspectiveTransformation";
+            this.btnPerspectiveTransformation.Size = new System.Drawing.Size(189, 23);
+            this.btnPerspectiveTransformation.TabIndex = 9;
+            this.btnPerspectiveTransformation.Text = "Perspective Transformation";
+            this.btnPerspectiveTransformation.UseVisualStyleBackColor = true;
+            this.btnPerspectiveTransformation.Click += new System.EventHandler(this.btnPerspectiveTransformation_Click);
             // 
             // Form1
             // 
@@ -1664,14 +1944,21 @@
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
             this.tabPage4.ResumeLayout(false);
+            this.groupBox18.ResumeLayout(false);
+            this.groupBox18.PerformLayout();
+            this.groupBox17.ResumeLayout(false);
             this.groupBox15.ResumeLayout(false);
             this.groupBox15.PerformLayout();
             this.groupBox16.ResumeLayout(false);
             this.groupBox16.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
             this.splitContainer2.Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
-            this.groupBox17.ResumeLayout(false);
+            this.groupBox19.ResumeLayout(false);
+            this.groupBox19.PerformLayout();
+            this.groupBox20.ResumeLayout(false);
+            this.groupBox20.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1808,6 +2095,29 @@
         private System.Windows.Forms.Button btnXorImgOpen;
         private System.Windows.Forms.Button btnOrImgOpen;
         private System.Windows.Forms.GroupBox groupBox18;
+        private System.Windows.Forms.RadioButton rbBlurBilateralFilter;
+        private System.Windows.Forms.RadioButton rbBlurGaussianBlur;
+        private System.Windows.Forms.RadioButton rbBlurMedianBlur;
+        private System.Windows.Forms.RadioButton rbBlurBoxFilter;
+        private System.Windows.Forms.RadioButton rbBlurBlur;
+        private System.Windows.Forms.Button btnBlur;
+        private System.Windows.Forms.GroupBox groupBox19;
+        private System.Windows.Forms.Button btnEdgeOpen;
+        private System.Windows.Forms.RadioButton rbEdgeCanny;
+        private System.Windows.Forms.RadioButton rbEdgeLaplacian;
+        private System.Windows.Forms.RadioButton rbEdgeScharr;
+        private System.Windows.Forms.RadioButton rbEdgeSobel;
+        private System.Windows.Forms.Button btnContourOpen;
+        private System.Windows.Forms.Button btnDetectionApproxPoly;
+        private System.Windows.Forms.Button btnContourTest1;
+        private System.Windows.Forms.Button btnContourTest2;
+        private System.Windows.Forms.GroupBox groupBox20;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox tbRotateAngle;
+        private System.Windows.Forms.Button btnRotateAffineTransformation;
+        private System.Windows.Forms.Button btnImgRotateWarpAffine;
+        private System.Windows.Forms.Button btnWarpPerspective;
+        private System.Windows.Forms.Button btnPerspectiveTransformation;
     }
 }
 

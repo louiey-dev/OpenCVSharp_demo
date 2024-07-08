@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Reflection.Emit;
 using System.Text;
@@ -529,6 +530,95 @@ namespace OpenCVSharp_demo
         {
             String path = ShowFileOpenDialog(FILE_FILTER_IMAGE);
             Cv.CompareImage(path);
+        }
+
+        private void btnBlur_Click(object sender, EventArgs e)
+        {
+            String path = ShowFileOpenDialog(FILE_FILTER_IMAGE);
+
+            if (RBGet(rbBlurBlur))
+                Cv.Blur(path);
+            else if (RBGet(rbBlurBoxFilter))
+                Cv.BoxFilter(path);
+            else if (RBGet(rbBlurMedianBlur))
+                Cv.MedianBlur(path);
+            else if (RBGet(rbBlurGaussianBlur))
+                Cv.GaussianBlur(path);
+            else if (RBGet(rbBlurBilateralFilter))
+                Cv.BilateralFilter(path);
+
+        }
+
+
+        private void btnEdgeOpen_Click(object sender, EventArgs e)
+        {
+            String path = ShowFileOpenDialog(FILE_FILTER_IMAGE);
+
+            if (RBGet(rbEdgeSobel))
+                Cv.Sobel(path);
+            else if (RBGet(rbEdgeScharr))
+                Cv.Scharr(path);
+            else if (RBGet(rbEdgeLaplacian))
+                Cv.Laplacian(path);
+            else if (RBGet(rbEdgeCanny))
+                Cv.Canny(path);
+        }
+
+        private void btnContourOpen_Click(object sender, EventArgs e)
+        {
+            String path = ShowFileOpenDialog(FILE_FILTER_IMAGE);
+
+            Cv.Contours(path);
+        }
+
+        private void btnDetectionApproxPoly_Click(object sender, EventArgs e)
+        {
+            String path = ShowFileOpenDialog(FILE_FILTER_IMAGE);
+
+            Cv.ApproxPoly(path);
+        }
+
+        private void btnContourTest1_Click(object sender, EventArgs e)
+        {
+            String path = ShowFileOpenDialog(FILE_FILTER_IMAGE);
+
+            Cv.ContourTest1(path);
+        }
+
+        private void btnContourTest2_Click(object sender, EventArgs e)
+        {
+            String path = ShowFileOpenDialog(FILE_FILTER_IMAGE);
+
+            Cv.ContourTest2(path);
+        }
+
+        private void btnImgRotateWarpAffine_Click(object sender, EventArgs e)
+        {
+            String path = ShowFileOpenDialog(FILE_FILTER_IMAGE);
+            double angle = Convert.ToDouble(TBGet(tbRotateAngle));
+
+            Cv.WarpAffine(path, angle);
+        }
+
+        private void btnRotateAffineTransformation_Click(object sender, EventArgs e)
+        {
+            String path = ShowFileOpenDialog(FILE_FILTER_IMAGE);
+
+            Cv.AffineTranform(path);
+        }
+
+        private void btnWarpPerspective_Click(object sender, EventArgs e)
+        {
+            String path = ShowFileOpenDialog(FILE_FILTER_IMAGE);
+
+            Cv.WarpPerspective(path);
+        }
+
+        private void btnPerspectiveTransformation_Click(object sender, EventArgs e)
+        {
+            String path = ShowFileOpenDialog(FILE_FILTER_IMAGE);
+
+            Cv.PerspectiveTransformation(path);
         }
     }
 }
